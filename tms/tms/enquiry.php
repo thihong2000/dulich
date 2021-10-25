@@ -33,7 +33,7 @@ $error="Something went wrong. Please try again";
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>TMS | Tourism Management System</title>
+<title>N7 - Travelnam</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Tourism Management System In PHP" />
@@ -78,38 +78,38 @@ $error="Something went wrong. Please try again";
 <?php include('includes/header.php');?>
 <div class="banner-1 ">
 	<div class="container">
-		<h1 class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;">TMS-Tourism Management System</h1>
+		<h1 class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;">N7 - Travelnam</h1>
 	</div>
 </div>
 <!--- /banner-1 ---->
 <!--- privacy ---->
 <div class="privacy">
 	<div class="container">
-		<h3 class="wow fadeInDown animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInDown;">Enquiry Form Password</h3>
+		<h3 class="wow fadeInDown animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInDown;">Mật khẩu biểu mẫu yêu cầu</h3>
 		<form name="enquiry" method="post">
-		 <?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
-				else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
+		 <?php if($error){?><div class="errorWrap"><strong>Lỗi</strong>:<?php echo htmlentities($error); ?> </div><?php } 
+				else if($msg){?><div class="succWrap"><strong>Thành công</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
 	<p style="width: 350px;">
 		
-			<b>Full name</b>  <input type="text" name="fname" class="form-control" id="fname" placeholder="Full Name" required="">
+			<b>Họ và tên</b>  <input type="text" name="fname" class="form-control" id="fname" placeholder="Full Name" required="">
 	</p> 
 <p style="width: 350px;">
 <b>Email</b>  <input type="email" name="email" class="form-control" id="email" placeholder="Valid Email id" required="">
 	</p> 
 
 	<p style="width: 350px;">
-<b>Mobile No</b>  <input type="text" name="mobileno" class="form-control" id="mobileno" maxlength="10" placeholder="10 Digit mobile No" required="">
+<b>Số điện thoại</b>  <input type="text" name="mobileno" class="form-control" id="mobileno" maxlength="10" placeholder="10 Digit mobile No" required="">
 	</p> 
 
 	<p style="width: 350px;">
-<b>Subject</b>  <input type="text" name="subject" class="form-control" id="subject"  placeholder="Subject" required="">
+<b>Đối tượng</b>  <input type="text" name="subject" class="form-control" id="subject"  placeholder="Subject" required="">
 	</p> 
 	<p style="width: 350px;">
-<b>Description</b>  <textarea name="description" class="form-control" rows="6" cols="50" id="description"  placeholder="Description" required=""></textarea> 
+<b>Mô tả</b>  <textarea name="description" class="form-control" rows="6" cols="50" id="description"  placeholder="Description" required=""></textarea> 
 	</p> 
 
 			<p style="width: 350px;">
-<button type="submit" name="submit1" class="btn-primary btn">Submit</button>
+<button type="submit" name="submit1" class="btn-primary btn">Gửi</button>
 			</p>
 			</form>
 

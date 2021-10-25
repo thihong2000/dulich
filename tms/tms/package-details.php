@@ -84,15 +84,15 @@ $error="Something went wrong. Please try again";
 <?php include('includes/header.php');?>
 <div class="banner-3">
 	<div class="container">
-		<h1 class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;"> TMS -Package Details</h1>
+		<h1 class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;"> N7 - Chi tiết gói</h1>
 	</div>
 </div>
 <!--- /banner ---->
 <!--- selectroom ---->
 <div class="selectroom">
 	<div class="container">	
-		  <?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
-				else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
+		  <?php if($error){?><div class="errorWrap"><strong>Lỗi</strong>:<?php echo htmlentities($error); ?> </div><?php } 
+				else if($msg){?><div class="succWrap"><strong>Thành công</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
 <?php 
 $pid=intval($_GET['pkgid']);
 $sql = "SELECT * from tbltourpackages where PackageId=:pid";
@@ -114,23 +114,23 @@ foreach($results as $result)
 			<div class="col-md-8 selectroom_right wow fadeInRight animated" data-wow-delay=".5s">
 				<h2><?php echo htmlentities($result->PackageName);?></h2>
 				<p class="dow">#PKG-<?php echo htmlentities($result->PackageId);?></p>
-				<p><b>Package Type :</b> <?php echo htmlentities($result->PackageType);?></p>
-				<p><b>Package Location :</b> <?php echo htmlentities($result->PackageLocation);?></p>
-					<p><b>Features</b> <?php echo htmlentities($result->PackageFetures);?></p>
+				<p><b>Loại gói :</b> <?php echo htmlentities($result->PackageType);?></p>
+				<p><b>Địa điểm gói :</b> <?php echo htmlentities($result->PackageLocation);?></p>
+					<p><b>Tính năng</b> <?php echo htmlentities($result->PackageFetures);?></p>
 					<div class="ban-bottom">
 				<div class="bnr-right">
-				<label class="inputLabel">From</label>
+				<label class="inputLabel">Từ</label>
 				<input class="date" id="datepicker" type="text" placeholder="dd-mm-yyyy"  name="fromdate" required="">
 			</div>
 			<div class="bnr-right">
-				<label class="inputLabel">To</label>
+				<label class="inputLabel">Đến</label>
 				<input class="date" id="datepicker1" type="text" placeholder="dd-mm-yyyy" name="todate" required="">
 			</div>
 			</div>
 						<div class="clearfix"></div>
 				<div class="grand">
-					<p>Grand Total</p>
-					<h3>USD.800</h3>
+					<p>Tổng cộng</p>
+					<h3>4.000.000 VND</h3>
 				</div>
 			</div>
 		<h3>Chi Tiết Gói</h3>
@@ -138,7 +138,7 @@ foreach($results as $result)
 				<div class="clearfix"></div>
 		</div>
 		<div class="selectroom_top">
-			<h2>Travels</h2>
+			<h2>Những chuyến du lịch</h2>
 			<div class="selectroom-info animated wow fadeInUp animated" data-wow-duration="1200ms" data-wow-delay="500ms" style="visibility: visible; animation-duration: 1200ms; animation-delay: 500ms; animation-name: fadeInUp; margin-top: -70px">
 				<ul>
 				

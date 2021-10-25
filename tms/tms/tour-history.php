@@ -103,7 +103,7 @@ $error="You can't cancel booking before 24 hours";
 <?php include('includes/header.php');?>
 <div class="banner-1 ">
 	<div class="container">
-		<h1 class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;">TMS-Tourism Management System</h1>
+		<h1 class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;">N7 - Hệ thống quản lý du lịch thuộc Travelnam</h1>
 	</div>
 </div>
 <!--- /banner-1 ---->
@@ -168,9 +168,9 @@ echo "Canceled by admin at " .$result->upddate;
 <td><?php echo htmlentities($result->regdate);?></td>
 <?php if($result->status==2)
 {
-	?><td>Cancelled</td>
+	?><td>Đã hủy </td>
 <?php } else {?>
-<td><a href="tour-history.php?bkid=<?php echo htmlentities($result->bookid);?>" onclick="return confirm('Do you really want to cancel booking')" >Cancel</a></td>
+<td><a href="tour-history.php?bkid=<?php echo htmlentities($result->bookid);?>" onclick="return confirm('Do you really want to cancel booking')" >Hủy bỏ</a></td>
 <?php }?>
 </tr>
 <?php $cnt=$cnt+1; }} ?>

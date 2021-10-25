@@ -89,39 +89,39 @@ return true;
 <?php include('includes/header.php');?>
 <div class="banner-1 ">
 	<div class="container">
-		<h1 class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;">TMS-Tourism Management System</h1>
+		<h1 class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;">N7 - Travelnam</h1>
 	</div>
 </div>
 <!--- /banner-1 ---->
 <!--- privacy ---->
 <div class="privacy">
 	<div class="container">
-		<h3 class="wow fadeInDown animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInDown;">Recover Password</h3>
+		<h3 class="wow fadeInDown animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInDown;">Khôi phục mật khẩu</h3>
 		<form name="chngpwd" method="post" onSubmit="return valid();">
-		 <?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
-				else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
+		 <?php if($error){?><div class="errorWrap"><strong>Lỗi</strong>:<?php echo htmlentities($error); ?> </div><?php } 
+				else if($msg){?><div class="succWrap"><strong>Thành công</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
 	<p style="width: 350px;">
 		
-			<b>Email id</b>  <input type="email" name="email" class="form-control" id="email" placeholder="Reg Email id" required="">
+			<b>Id Email </b>  <input type="email" name="email" class="form-control" id="email" placeholder="Reg Email id" required="">
 	</p> 
 
 	<p style="width: 350px;">
 		
-			<b>Mobile No</b>  <input type="text" name="mobile" class="form-control" id="mobile" placeholder="Reg Mobile no" required="">
+			<b>Số điện thoại</b>  <input type="text" name="mobile" class="form-control" id="mobile" placeholder="Reg Mobile no" required="">
 	</p> 
 
 <p style="width: 350px;">
-<b>New  Password</b>
+<b>Mật khẩu mới</b>
 <input type="password" class="form-control" name="newpassword" id="newpassword" placeholder="New Password" required="">
 </p>
 
 <p style="width: 350px;">
-<b>Confirm Password</b>
+<b>Xác nhận mật khẩu</b>
 	<input type="password" class="form-control" name="confirmpassword" id="confirmpassword" placeholder="Confrim Password" required="">
 			</p>
 
 			<p style="width: 350px;">
-<button type="submit" name="submit50" class="btn-primary btn">Change</button>
+<button type="submit" name="submit50" class="btn-primary btn">Thay đổi</button>
 			</p>
 			</form>
 

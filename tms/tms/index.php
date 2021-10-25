@@ -32,7 +32,7 @@ include('includes/config.php');
 <?php include('includes/header.php');?>
 <div class="banner">
 	<div class="container">
-		<h1 class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;"> TMS - Tourism Management System</h1>
+		<h1 class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;"> N7 - Travelnam</h1>
 	</div>
 </div>
 
@@ -45,8 +45,8 @@ include('includes/config.php');
 				<a href="offers.html"><i class="fa fa-usd"></i></a>
 			</div>
 			<div class="rup-rgt">
-				<h3>UP TO USD. 50 OFF</h3>
-				<h4><a href="offers.html">TRAVEL SMART</a></h4>
+				<h3>Giảm 40%</h3>
+				<h4><a href="offers.html">DU LỊCH THÔNG MINH</a></h4>
 				
 			</div>
 				<div class="clearfix"></div>
@@ -56,8 +56,8 @@ include('includes/config.php');
 				<a href="offers.html"><i class="fa fa-h-square"></i></a>
 			</div>
 			<div class="rup-rgt">
-				<h3>UP TO 70% OFF</h3>
-				<h4><a href="offers.html">ON HOTELS ACROSS WORLD</a></h4>
+				<h3>Giảm đến 30%</h3>
+				<h4><a href="offers.html">THẾ GIỚI KHÁCH SẠN</a></h4>
 				
 			</div>
 				<div class="clearfix"></div>
@@ -67,8 +67,8 @@ include('includes/config.php');
 				<a href="offers.html"><i class="fa fa-mobile"></i></a>
 			</div>
 			<div class="rup-rgt">
-				<h3>FLAT USD. 50 OFF</h3>
-				<h4><a href="offers.html">US APP OFFER</a></h4>
+				<h3>Giảm 50%</h3>
+				<h4><a href="offers.html">ƯU ĐÃI KHI LIÊN KẾT ỨNG DỤNG</a></h4>
 			
 			</div>
 				<div class="clearfix"></div>
@@ -136,8 +136,8 @@ foreach($results as $result)
 				<a href="#"><i class="glyphicon glyphicon-list-alt"></i></a>
 			</div>
 			<div class="rou-rgt wow fadeInDown animated" data-wow-delay=".5s">
-				<h3>80000</h3>
-				<p>Enquiries</p>
+				<h3>9000</h3>
+				<p>Yêu cầu</p>
 			</div>
 				<div class="clearfix"></div>
 		</div>
@@ -146,8 +146,8 @@ foreach($results as $result)
 				<a href="#"><i class="fa fa-user"></i></a>
 			</div>
 			<div class="rou-rgt">
-				<h3>1900</h3>
-				<p>Regestered users</p>
+				<h3>2000</h3>
+				<p>Người dùng đã đăng ký</p>
 			</div>
 				<div class="clearfix"></div>
 		</div>
@@ -156,8 +156,8 @@ foreach($results as $result)
 				<a href="#"><i class="fa fa-ticket"></i></a>
 			</div>
 			<div class="rou-rgt">
-				<h3>7,00,00,000+</h3>
-				<p>Booking</p>
+				<h3>8,00,00,000+</h3>
+				<p>Đặt trước</p>
 			</div>
 				<div class="clearfix"></div>
 		</div>

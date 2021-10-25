@@ -100,27 +100,27 @@ return true;
 <!--- privacy ---->
 <div class="privacy">
 	<div class="container">
-		<h3 class="wow fadeInDown animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInDown;">Change Password</h3>
+		<h3 class="wow fadeInDown animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInDown;">Thay đổi mật khẩu</h3>
 		<form name="chngpwd" method="post" onSubmit="return valid();">
-		 <?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
-				else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
+		 <?php if($error){?><div class="errorWrap"><strong>Lỗi</strong>:<?php echo htmlentities($error); ?> </div><?php } 
+				else if($msg){?><div class="succWrap"><strong>Thành công</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
 	<p style="width: 350px;">
 		
-			<b>Current Password</b>  <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Current Password" required="">
+			<b>Mật khẩu hiện tại</b>  <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Current Password" required="">
 	</p> 
 
 <p style="width: 350px;">
-<b>New  Password</b>
+<b>Mật khẩu mới</b>
 <input type="password" class="form-control" name="newpassword" id="newpassword" placeholder="New Password" required="">
 </p>
 
 <p style="width: 350px;">
-<b>Confirm Password</b>
+<b>Xác nhận mật khẩu</b>
 	<input type="password" class="form-control" name="confirmpassword" id="confirmpassword" placeholder="Confrim Password" required="">
 			</p>
 
 			<p style="width: 350px;">
-<button type="submit" name="submit5" class="btn-primary btn">Change</button>
+<button type="submit" name="submit5" class="btn-primary btn">Thay đổi</button>
 			</p>
 			</form>
 

@@ -72,7 +72,7 @@
 {?>
 								<li>Bạn cần hỗ trợ?<a href="#" data-toggle="modal" data-target="#myModal3"> / Hãy cho chúng tôi biết </a>  </li>
 								<?php } else { ?>
-								<li><a href="enquiry.php"> Enquiry </a>  </li>
+								<li><a href="enquiry.php">Xem xét </a>  </li>
 								<?php } ?>
 								<div class="clearfix"></div>
 

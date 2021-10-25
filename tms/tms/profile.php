@@ -99,7 +99,7 @@ foreach($results as $result)
 
 	<p style="width: 350px;">
 		
-			<b>Name</b>  <input type="text" name="name" value="<?php echo htmlentities($result->FullName);?>" class="form-control" id="name" required="">
+			<b>Tên</b>  <input type="text" name="name" value="<?php echo htmlentities($result->FullName);?>" class="form-control" id="name" required="">
 	</p> 
 
 <p style="width: 350px;">

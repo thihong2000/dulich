@@ -4,10 +4,10 @@
 	<div class="container">
 		<ul class="tp-hd-lft wow fadeInLeft animated" data-wow-delay=".5s">
 			<li class="hm"><a href="index.html"><i class="fa fa-home"></i></a></li>
-			<li class="prnt"><a href="profile.php">My Profile</a></li>
-				<li class="prnt"><a href="change-password.php">Change Password</a></li>
-			<li class="prnt"><a href="tour-history.php">My Tour History</a></li>
-			<li class="prnt"><a href="issuetickets.php">Issue Tickets</a></li>
+			<li class="prnt"><a href="profile.php">Hồ sơ của bạn</a></li>
+				<li class="prnt"><a href="change-password.php">Thay đổi mật khẩu</a></li>
+			<li class="prnt"><a href="tour-history.php">Lịch sử Tour</a></li>
+			<li class="prnt"><a href="issuetickets.php">Xuất vé</a></li>
 		</ul>
 		<ul class="tp-hd-rgt wow fadeInRight animated" data-wow-delay=".5s"> 
 			<li class="tol">Chào mừng :</li>				
@@ -40,11 +40,6 @@
 			<a href="index.php"> <span>Travelnam</span></a>	
 		</div>
 	
-		<div class="lock fadeInDown animated" data-wow-delay=".5s"> 
-			<li><i class="fa fa-lock"></i></li>
-            <li><div class="securetxt">SAFE &amp; SECURE </div></li>
-			<div class="clearfix"></div>
-		</div>
 		<div class="clearfix"></div>
 	</div>
 </div>
@@ -67,15 +62,15 @@
 				<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
 					<nav class="cl-effect-1">
 						<ul class="nav navbar-nav">
-							<li><a href="index.php">Home</a></li>
-							<li><a href="page.php?type=aboutus">About</a></li>
-								<li><a href="package-list.php">Tour Packages</a></li>
-								<li><a href="page.php?type=privacy">Privacy Policy</a></li>
-								<li><a href="page.php?type=terms">Terms of Use</a></li>
-								<li><a href="page.php?type=contact">Contact Us</a></li>
+							<li><a href="index.php">Trang chủ</a></li>
+							<li><a href="page.php?type=aboutus">Về chúng tôi</a></li>
+								<li><a href="package-list.php">Các Gói Du Lịch</a></li>
+								<li><a href="page.php?type=privacy">Chính sách bảo mật</a></li>
+								<li><a href="page.php?type=terms">Điều khoản</a></li>
+								<li><a href="page.php?type=contact">Liên hệ</a></li>
 								<?php if($_SESSION['login'])
 {?>
-								<li>Need Help?<a href="#" data-toggle="modal" data-target="#myModal3"> / Write Us </a>  </li>
+								<li>Bạn cần hỗ trợ?<a href="#" data-toggle="modal" data-target="#myModal3"> / Hãy cho chúng tôi biết </a>  </li>
 								<?php } else { ?>
 								<li><a href="enquiry.php"> Enquiry </a>  </li>
 								<?php } ?>

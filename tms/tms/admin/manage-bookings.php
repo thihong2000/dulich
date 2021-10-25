@@ -44,7 +44,7 @@ $msg="Booking Confirm successfully";
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>TMS | Admin manage Bookings</title>
+<title>N7 | Quản trị viên quản lý Đặt chỗ</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
@@ -116,27 +116,27 @@ $msg="Booking Confirm successfully";
 				</div>
 <!--heder end here-->
 <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Home</a><i class="fa fa-angle-right"></i>Manage Bookings</li>
+                <li class="breadcrumb-item"><a href="index.html">Trang chủ</a><i class="fa fa-angle-right"></i>Quản lý đặt trước </li>
             </ol>
 <div class="agile-grids">	
 				<!-- tables -->
-				<?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
-				else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
+				<?php if($error){?><div class="errorWrap"><strong>Thất bại</strong>:<?php echo htmlentities($error); ?> </div><?php } 
+				else if($msg){?><div class="succWrap"><strong>Thành công</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
 				<div class="agile-tables">
 					<div class="w3l-table-info">
-					  <h2>Manage Bookings</h2>
+					  <h2>Quản lý đặt trước </h2>
 					    <table id="table">
 						<thead>
 						  <tr>
-						  <th>Booikn id</th>
-							<th>Name</th>
-							<th>Mobile No.</th>
-							<th>Email Id</th>
+						  <th>ID đặt chỗ</th>
+							<th>Tên</th>
+							<th>Số điện thoại di động</th>
+							<th>ID Email</th>
 							<th>RegDate </th>
-							<th>From /To </th>
-							<th>Comment </th>
-							<th>Status </th>
-							<th>Action </th>
+							<th>Từ /Đến </th>
+							<th>Bình luận </th>
+							<th>Trạng thái</th>
+							<th>Hoạt động</th>
 						  </tr>
 						</thead>
 						<tbody>
@@ -178,9 +178,9 @@ echo "Canceled by User at " .$result->upddate;
 
 <?php if($result->status==2)
 {
-	?><td>Cancelled</td>
+	?><td>Đã hủy</td>
 <?php } else {?>
-<td><a href="manage-bookings.php?bkid=<?php echo htmlentities($result->bookid);?>" onclick="return confirm('Do you really want to cancel booking')" >Cancel</a> / <a href="manage-bookings.php?bckid=<?php echo htmlentities($result->bookid);?>" onclick="return confirm('booking has been confirm')" >Confirm</a></td>
+<td><a href="manage-bookings.php?bkid=<?php echo htmlentities($result->bookid);?>" onclick="return confirm('Do you really want to cancel booking')" >Hủy bỏ</a> / <a href="manage-bookings.php?bckid=<?php echo htmlentities($result->bookid);?>" onclick="return confirm('booking has been confirm')" >Xác nhận</a></td>
 <?php }?>
 
 						  </tr>

@@ -11,7 +11,7 @@ else{
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>TMS | admin manage packages</title>
+<title>N7 | Quản trị viên quản lý các gói</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
@@ -74,24 +74,24 @@ else{
 				</div>
 <!--heder end here-->
 <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Home</a><i class="fa fa-angle-right"></i>Manage Packages</li>
+                <li class="breadcrumb-item"><a href="index.html">Trang chủ</a><i class="fa fa-angle-right"></i>Quản lý gói</li>
             </ol>
 <div class="agile-grids">	
 				<!-- tables -->
 				
 				<div class="agile-tables">
 					<div class="w3l-table-info">
-					  <h2>Manage Packages</h2>
+					  <h2>Quản lý Gói </h2>
 					    <table id="table">
 						<thead>
 						  <tr>
 						  <th>#</th>
-							<th >Name</th>
-							<th>Type</th>
-							<th>Location</th>
-							<th>Price</th>
-							<th>Creation Date</th>
-							<th>Action</th>
+							<th >Tên</th>
+							<th>Loại</th>
+							<th>Đặt điểm</th>
+							<th>Giá cả</th>
+							<th>Ngày thành lập</th>
+							<th>Hoạt động</th>
 						  </tr>
 						</thead>
 						<tbody>
@@ -112,7 +112,7 @@ foreach($results as $result)
 							<td><?php echo htmlentities($result->PackageLocation);?></td>
 							<td>$<?php echo htmlentities($result->PackagePrice);?></td>
 							<td><?php echo htmlentities($result->Creationdate);?></td>
-							<td><a href="update-package.php?pid=<?php echo htmlentities($result->PackageId);?>"><button type="button" class="btn btn-primary btn-block">View Details</button></a></td>
+							<td><a href="update-package.php?pid=<?php echo htmlentities($result->PackageId);?>"><button type="button" class="btn btn-primary btn-block">Xem chi tiết</button></a></td>
 						  </tr>
 						 <?php $cnt=$cnt+1;} }?>
 						</tbody>

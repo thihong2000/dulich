@@ -30,7 +30,7 @@ $msg="Enquiry  successfully read";
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>TMS | Admin manage Bookings</title>
+<title>N7 | Quản trị viên quản lý Đặt chỗ</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
@@ -102,26 +102,26 @@ $msg="Enquiry  successfully read";
 				</div>
 <!--heder end here-->
 <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Home</a><i class="fa fa-angle-right"></i>Manage Enquiries</li>
+                <li class="breadcrumb-item"><a href="index.html">Trang chủ</a><i class="fa fa-angle-right"></i>Quản lý yêu cầu</li>
             </ol>
 <div class="agile-grids">	
 				<!-- tables -->
-				<?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
-				else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
+				<?php if($error){?><div class="errorWrap"><strong>Thất bại</strong>:<?php echo htmlentities($error); ?> </div><?php } 
+				else if($msg){?><div class="succWrap"><strong>Thành công</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
 				<div class="agile-tables">
 					<div class="w3l-table-info">
-					  <h2>Manage Enquiries</h2>
+					  <h2>Quản lý yêu cầu</h2>
 					    <table id="table">
 						<thead>
 						  <tr>
-						  <th>Ticket id</th>
-							<th>Name</th>
-							<th>Mobile No./ Email</th>
+						  <th>Id vé</th>
+							<th>Tên</th>
+							<th>Số điện thoại di động / Email</th>
 							
-							<th>Subject </th>
-							<th>Description </th>
-							<th>Posting date </th>
-							<th>Action </th>
+							<th>Đối tượng </th>
+							<th>Mô tả </th>
+							<th>Ngày đăng </th>
+							<th>Hoạt động</th>
 							
 						  </tr>
 						</thead>
@@ -148,10 +148,10 @@ foreach($results as $result)
 								<td width="50"><?php echo htmlentities($result->PostingDate);?></td>
 								<?php if($result->Status==1)
 {
-	?><td>Read</td>
+	?><td>Đọc</td>
 <?php } else {?>
 
-<td><a href="manage-enquires.php?eid=<?php echo htmlentities($result->id);?>" onclick="return confirm('Do you really want to read')" >Pending</a>
+<td><a href="manage-enquires.php?eid=<?php echo htmlentities($result->id);?>" onclick="return confirm('Do you really want to read')" >Chưa giải quyết</a>
 </td>
 <?php } ?>
 </tr>

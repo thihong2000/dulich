@@ -43,7 +43,7 @@ $error="Something went wrong. Please try again";
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>TMS | Admin Package Creation</title>
+<title>N7 | Tạo gói quản trị</title>
 
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
@@ -86,48 +86,48 @@ $error="Something went wrong. Please try again";
 				</div>
 <!--heder end here-->
 	<ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.php">Home</a><i class="fa fa-angle-right"></i>Create Package </li>
+                <li class="breadcrumb-item"><a href="index.php">Trang chủ</a><i class="fa fa-angle-right"></i>Tạo gói </li>
             </ol>
 		<!--grid-->
  	<div class="grid-form">
  
 <!---->
   <div class="grid-form1">
-  	       <h3>Create Package</h3>
-  	        	  <?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
-				else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
+  	       <h3>Tạo gói</h3>
+  	        	  <?php if($error){?><div class="errorWrap"><strong>Thất bại</strong>:<?php echo htmlentities($error); ?> </div><?php } 
+				else if($msg){?><div class="succWrap"><strong>Thành công</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
   	         <div class="tab-content">
 						<div class="tab-pane active" id="horizontal-form">
 							<form class="form-horizontal" name="package" method="post" enctype="multipart/form-data">
 								<div class="form-group">
-									<label for="focusedinput" class="col-sm-2 control-label">Package Name</label>
+									<label for="focusedinput" class="col-sm-2 control-label">Tên gói</label>
 									<div class="col-sm-8">
 										<input type="text" class="form-control1" name="packagename" id="packagename" placeholder="Create Package" required>
 									</div>
 								</div>
 <div class="form-group">
-									<label for="focusedinput" class="col-sm-2 control-label">Package Type</label>
+									<label for="focusedinput" class="col-sm-2 control-label">Loại gói</label>
 									<div class="col-sm-8">
 										<input type="text" class="form-control1" name="packagetype" id="packagetype" placeholder=" Package Type eg- Family Package / Couple Package" required>
 									</div>
 								</div>
 
 <div class="form-group">
-									<label for="focusedinput" class="col-sm-2 control-label">Package Location</label>
+									<label for="focusedinput" class="col-sm-2 control-label">Địa điểm gói</label>
 									<div class="col-sm-8">
 										<input type="text" class="form-control1" name="packagelocation" id="packagelocation" placeholder=" Package Location" required>
 									</div>
 								</div>
 
 <div class="form-group">
-									<label for="focusedinput" class="col-sm-2 control-label">Package Price in USD</label>
+									<label for="focusedinput" class="col-sm-2 control-label">Giá trọn gói tính bằng VND</label>
 									<div class="col-sm-8">
 										<input type="text" class="form-control1" name="packageprice" id="packageprice" placeholder=" Package Price is USD" required>
 									</div>
 								</div>
 
 <div class="form-group">
-									<label for="focusedinput" class="col-sm-2 control-label">Package Features</label>
+									<label for="focusedinput" class="col-sm-2 control-label">Tính năng gói</label>
 									<div class="col-sm-8">
 										<input type="text" class="form-control1" name="packagefeatures" id="packagefeatures" placeholder="Package Features Eg-free Pickup-drop facility" required>
 									</div>
@@ -135,13 +135,13 @@ $error="Something went wrong. Please try again";
 
 
 <div class="form-group">
-									<label for="focusedinput" class="col-sm-2 control-label">Package Details</label>
+									<label for="focusedinput" class="col-sm-2 control-label">Chi tiết gói</label>
 									<div class="col-sm-8">
 										<textarea class="form-control" rows="5" cols="50" name="packagedetails" id="packagedetails" placeholder="Package Details" required></textarea> 
 									</div>
 								</div>															
 <div class="form-group">
-									<label for="focusedinput" class="col-sm-2 control-label">Package Image</label>
+									<label for="focusedinput" class="col-sm-2 control-label">Ảnh gói</label>
 									<div class="col-sm-8">
 										<input type="file" name="packageimage" id="packageimage" required>
 									</div>
@@ -149,9 +149,9 @@ $error="Something went wrong. Please try again";
 
 								<div class="row">
 			<div class="col-sm-8 col-sm-offset-2">
-				<button type="submit" name="submit" class="btn-primary btn">Create</button>
+				<button type="submit" name="submit" class="btn-primary btn">Tạo</button>
 
-				<button type="reset" class="btn-inverse btn">Reset</button>
+				<button type="reset" class="btn-inverse btn">Cài lại</button>
 			</div>
 		</div>
 						

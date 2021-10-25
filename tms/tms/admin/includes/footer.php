@@ -1,3 +1,3 @@
 <div class="copyrights">
-	 <p>© 2020 TMS. All Rights Reserved |  <a href="#">TMS</a> </p>
+	 <p>Copyright © 2021 N7 | <a href="#">N7</a> </p>
 </div>	

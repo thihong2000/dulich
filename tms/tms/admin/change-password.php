@@ -37,7 +37,7 @@ $error="Your current password is wrong";
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>TMS | Admin Change Password</title>
+<title>N7 | Quản trị viên Thay đổi mật khẩu</title>
 
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 
@@ -93,21 +93,21 @@ return true;
 				</div>
 <!--heder end here-->
 	<ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="dashboard.php">Home</a><i class="fa fa-angle-right"></i>Change Password</li>
+                <li class="breadcrumb-item"><a href="dashboard.php">Trang chủ</a><i class="fa fa-angle-right"></i>Thay đổi mật khẩu</li>
             </ol>
 		<!--grid-->
  	<div class="grid-form">
 
   <div class="grid-form1">
 
-  	        	  <?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
-				else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
+  	        	  <?php if($error){?><div class="errorWrap"><strong>Thất bại</strong>:<?php echo htmlentities($error); ?> </div><?php } 
+				else if($msg){?><div class="succWrap"><strong>Thành công</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
 				
   <div class="panel-body">
 					<form  name="chngpwd" method="post" class="form-horizontal" onSubmit="return valid();">
 
 						<div class="form-group">
-							<label class="col-md-2 control-label">Current Password</label>
+							<label class="col-md-2 control-label">Mật khẩu hiện tại</label>
 							<div class="col-md-8">
 								<div class="input-group">
 									<span class="input-group-addon">
@@ -119,7 +119,7 @@ return true;
 						</div>
 
 	<div class="form-group">
-							<label class="col-md-2 control-label">New Password</label>
+							<label class="col-md-2 control-label">Mật khẩu mới</label>
 							<div class="col-md-8">
 								<div class="input-group">
 									<span class="input-group-addon">
@@ -131,7 +131,7 @@ return true;
 						</div>
 
 	<div class="form-group">
-							<label class="col-md-2 control-label">Confirm Password</label>
+							<label class="col-md-2 control-label">Xác nhận mật khẩu</label>
 							<div class="col-md-8">
 								<div class="input-group">
 									<span class="input-group-addon">
@@ -143,8 +143,8 @@ return true;
 						</div>
 
 						<div class="col-sm-8 col-sm-offset-2">
-				<button type="submit" name="submit" class="btn-primary btn">Submit</button>
-				<button type="reset" class="btn-inverse btn">Reset</button>
+				<button type="submit" name="submit" class="btn-primary btn">Gửi</button>
+				<button type="reset" class="btn-inverse btn">Cài lại</button>
 			</div>
 		</div>
 			

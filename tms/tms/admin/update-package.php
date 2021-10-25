@@ -34,7 +34,7 @@ $msg="Package Updated Successfully";
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>TMS | Admin Package Creation</title>
+<title>N7 | Tạo gói quản trị</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Pooled Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -80,16 +80,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 <!--heder end here-->
 	<ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Home</a><i class="fa fa-angle-right"></i>Update Tour Package </li>
+                <li class="breadcrumb-item"><a href="index.html">Trang chủ</a><i class="fa fa-angle-right"></i>Cập nhật gói tham quan </li>
             </ol>
 		<!--grid-->
  	<div class="grid-form">
  
 <!---->
   <div class="grid-form1">
-  	       <h3>Update Package</h3>
-  	        	  <?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
-				else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
+  	       <h3>Cập nhật gói</h3>
+  	        	  <?php if($error){?><div class="errorWrap"><strong>Thất bại</strong>:<?php echo htmlentities($error); ?> </div><?php } 
+				else if($msg){?><div class="succWrap"><strong>Thành công</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
   	         <div class="tab-content">
 						<div class="tab-pane active" id="horizontal-form">
 						
@@ -108,34 +108,34 @@ foreach($results as $result)
 
 							<form class="form-horizontal" name="package" method="post" enctype="multipart/form-data">
 								<div class="form-group">
-									<label for="focusedinput" class="col-sm-2 control-label">Package Name</label>
+									<label for="focusedinput" class="col-sm-2 control-label">Tên gói</label>
 									<div class="col-sm-8">
 										<input type="text" class="form-control1" name="packagename" id="packagename" placeholder="Create Package" value="<?php echo htmlentities($result->PackageName);?>" required>
 									</div>
 								</div>
 <div class="form-group">
-									<label for="focusedinput" class="col-sm-2 control-label">Package Type</label>
+									<label for="focusedinput" class="col-sm-2 control-label">Loại gói</label>
 									<div class="col-sm-8">
 										<input type="text" class="form-control1" name="packagetype" id="packagetype" placeholder=" Package Type eg- Family Package / Couple Package" value="<?php echo htmlentities($result->PackageType);?>" required>
 									</div>
 								</div>
 
 <div class="form-group">
-									<label for="focusedinput" class="col-sm-2 control-label">Package Location</label>
+									<label for="focusedinput" class="col-sm-2 control-label">Địa điểm gói</label>
 									<div class="col-sm-8">
 										<input type="text" class="form-control1" name="packagelocation" id="packagelocation" placeholder=" Package Location" value="<?php echo htmlentities($result->PackageLocation);?>" required>
 									</div>
 								</div>
 
 <div class="form-group">
-									<label for="focusedinput" class="col-sm-2 control-label">Package Price in USD</label>
+									<label for="focusedinput" class="col-sm-2 control-label">Giá trọn gói tính bằng VND</label>
 									<div class="col-sm-8">
 										<input type="text" class="form-control1" name="packageprice" id="packageprice" placeholder=" Package Price is USD" value="<?php echo htmlentities($result->PackagePrice);?>" required>
 									</div>
 								</div>
 
 <div class="form-group">
-									<label for="focusedinput" class="col-sm-2 control-label">Package Features</label>
+									<label for="focusedinput" class="col-sm-2 control-label">Tính năng gói</label>
 									<div class="col-sm-8">
 										<input type="text" class="form-control1" name="packagefeatures" id="packagefeatures" placeholder="Package Features Eg-free Pickup-drop facility" value="<?php echo htmlentities($result->PackageFetures);?>" required>
 									</div>
@@ -143,20 +143,20 @@ foreach($results as $result)
 
 
 <div class="form-group">
-									<label for="focusedinput" class="col-sm-2 control-label">Package Details</label>
+									<label for="focusedinput" class="col-sm-2 control-label">Chi tiết gói</label>
 									<div class="col-sm-8">
 										<textarea class="form-control" rows="5" cols="50" name="packagedetails" id="packagedetails" placeholder="Package Details" required><?php echo htmlentities($result->PackageDetails);?></textarea> 
 									</div>
 								</div>															
 <div class="form-group">
-<label for="focusedinput" class="col-sm-2 control-label">Package Image</label>
+<label for="focusedinput" class="col-sm-2 control-label">Ảnh gói</label>
 <div class="col-sm-8">
 <img src="pacakgeimages/<?php echo htmlentities($result->PackageImage);?>" width="200">&nbsp;&nbsp;&nbsp;<a href="change-image.php?imgid=<?php echo htmlentities($result->PackageId);?>">Change Image</a>
 </div>
 </div>
 
 <div class="form-group">
-									<label for="focusedinput" class="col-sm-2 control-label">Last Updation Date</label>
+									<label for="focusedinput" class="col-sm-2 control-label">Ngày cập nhật cuối cùng</label>
 									<div class="col-sm-8">
 <?php echo htmlentities($result->UpdationDate);?>
 									</div>
@@ -165,7 +165,7 @@ foreach($results as $result)
 
 								<div class="row">
 			<div class="col-sm-8 col-sm-offset-2">
-				<button type="submit" name="submit" class="btn-primary btn">Update</button>
+				<button type="submit" name="submit" class="btn-primary btn">Cập nhật</button>
 			</div>
 		</div>
 						

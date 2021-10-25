@@ -38,7 +38,7 @@ window.print();
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>Cập nhật tuân thủ</title>
+<title>Cập nhật Tuân thủ</title>
 <link href="style.css" rel="stylesheet" type="text/css" />
 <link href="anuj.css" rel="stylesheet" type="text/css">
 </head>
@@ -49,7 +49,7 @@ window.print();
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
 
     <tr height="50">
-      <td colspan="2" class="fontkink2" style="padding-left:0px;"><div class="fontpink2"> <b>Cập nhật Nhận xét!</b></div></td>
+      <td colspan="2" class="fontkink2" style="padding-left:0px;"><div class="fontpink2"> <b>Cập nhật nhận xét !</b></div></td>
       
     </tr>
 
@@ -58,7 +58,7 @@ window.print();
 
       <tr>
       <td colspan="2" ">  <?php if($error){?><div class="errorWrap"><strong>Thất bại</strong>:<?php echo htmlentities($error); ?> </div><?php } 
-        else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?></td>
+        else if($msg){?><div class="succWrap"><strong>Thành công</strong>:<?php echo htmlentities($msg); ?> </div><?php }?></td>
     
     </tr>
 
@@ -99,7 +99,7 @@ foreach($results as $result)
       <td class="fontkink" align="justify" ><?php echo htmlentities($result->AdminRemark);?></td>
     </tr>
     <tr>
-      <td class="fontkink1" ><b>Ngày Nhận xét:</b></td>
+      <td class="fontkink1" ><b>Ngày nhận xét:</b></td>
       <td class="fontkink" align="justify" ><?php echo htmlentities($result->AdminremarkDate);?></td>
     </tr>
     <?php }}}?>

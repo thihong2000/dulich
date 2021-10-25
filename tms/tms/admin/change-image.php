@@ -29,7 +29,7 @@ $msg="Package Created Successfully";
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>TMS | Admin Package Creation</title>
+<title>N7 | Tạo gói quản trị </title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Pooled Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -75,16 +75,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 <!--heder end here-->
 	<ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Home</a><i class="fa fa-angle-right"></i>Update Package Image </li>
+                <li class="breadcrumb-item"><a href="index.html">Trang chủ</a><i class="fa fa-angle-right"></i>Cập nhật hình ảnh gói</li>
             </ol>
 		<!--grid-->
  	<div class="grid-form">
  
 <!---->
   <div class="grid-form1">
-  	       <h3>Update Package Image </h3>
-  	        	  <?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
-				else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
+  	       <h3>Cập nhật hình ảnh gói </h3>
+  	        	  <?php if($error){?><div class="errorWrap"><strong>Thất bại</strong>:<?php echo htmlentities($error); ?> </div><?php } 
+				else if($msg){?><div class="succWrap"><strong>Thành công</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
   	         <div class="tab-content">
 						<div class="tab-pane active" id="horizontal-form">
 							<form class="form-horizontal" name="package" method="post" enctype="multipart/form-data">
@@ -101,14 +101,14 @@ if($query->rowCount() > 0)
 foreach($results as $result)
 {	?>	
 <div class="form-group">
-<label for="focusedinput" class="col-sm-2 control-label"> Package Image </label>
+<label for="focusedinput" class="col-sm-2 control-label"> Hình ảnh gói </label>
 <div class="col-sm-8">
 <img src="pacakgeimages/<?php echo htmlentities($result->PackageImage);?>" width="200">
 </div>
 </div>
 																					
 <div class="form-group">
-									<label for="focusedinput" class="col-sm-2 control-label">New Image</label>
+									<label for="focusedinput" class="col-sm-2 control-label">Ảnh mới</label>
 									<div class="col-sm-8">
 										<input type="file" name="packageimage" id="packageimage" required>
 									</div>
@@ -117,7 +117,7 @@ foreach($results as $result)
 
 								<div class="row">
 			<div class="col-sm-8 col-sm-offset-2">
-				<button type="submit" name="submit" class="btn-primary btn">Update</button>
+				<button type="submit" name="submit" class="btn-primary btn">Cập nhật</button>
 
 			</div>
 		</div>

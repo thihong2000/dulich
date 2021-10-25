@@ -71,7 +71,7 @@ error:function (){}
 		<input type="text" value="" placeholder="ID Email" name="email" id="email" onBlur="checkAvailability()" autocomplete="off"  required="">	
 		 <span id="user-availability-status" style="font-size:12px;"></span> 
 	<input type="password" value="" placeholder="Nhập mật khẩu" name="password" required="">	
-													<input type="submit" name="submit" id="submit" value="CREATE ACCOUNT">
+													<input type="submit" name="submit" id="submit" value="Tạo tài khoản">
 												</form>
 											</div>
 												<div class="clearfix"></div>								

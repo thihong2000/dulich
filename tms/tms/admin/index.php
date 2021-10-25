@@ -67,7 +67,7 @@ echo "<script type='text/javascript'> document.location = 'dashboard.php'; </scr
 			</div>
 			
 			<div class="login-w3">
-					<input type="submit" class="login" name="login" value="Sign In">
+					<input type="submit" class="login" name="login" value="Đăng nhập">
 			</div>
 			<div class="clearfix"></div>
 		</form>

@@ -13,7 +13,7 @@
 											<li id="menu-academico-avaliacoes" ><a href="manage-packages.php">Quản lý</a></li>
 										  </ul>
 										</li>
-									<li id="menu-academico" ><a href="manage-users.php"><i class="fa fa-users" aria-hidden="true"></i><span>Manage Users</span><div class="clearfix"></div></a></li>
+									<li id="menu-academico" ><a href="manage-users.php"><i class="fa fa-users" aria-hidden="true"></i><span>Quản lý người dùng</span><div class="clearfix"></div></a></li>
 									
 									<li><a href="manage-bookings.php"><i class="fa fa-list" aria-hidden="true"></i>  <span>Quản lý các đặt phòng</span><div class="clearfix"></div></a></li>
 									 <li><a href="manageissues.php"><i class="fa fa-table"></i>  <span>Quản lý sự cố </span><div class="clearfix"></div></a></li>

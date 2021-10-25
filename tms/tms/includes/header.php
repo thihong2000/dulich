@@ -21,7 +21,7 @@
 	<div class="container">
 		<ul class="tp-hd-lft wow fadeInLeft animated" data-wow-delay=".5s">
 			<li class="hm"><a href="index.php"><i class="fa fa-home"></i></a></li>
-				<li class="hm"><a href="admin/index.php">Đăng nhập với tư cách Admin</a></li>
+				<li class="hm"><a href="admin/index.php">Đăng nhập với tư cách Quản trị viên</a></li>
 		</ul>
 		<ul class="tp-hd-rgt wow fadeInRight animated" data-wow-delay=".5s"> 
 			<li class="tol">Gọi chúng tôi : 123-4568790</li>				

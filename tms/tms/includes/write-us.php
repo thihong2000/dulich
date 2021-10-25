@@ -35,16 +35,16 @@ echo "<script type='text/javascript'> document.location = 'thankyou.php'; </scri
 							<form name="help" method="post">
 								<div class="modal-body modal-spa">
 									<div class="writ">
-										<h4>HOW CAN WE HELP YOU</h4>
+										<h4>CẦN SỰ TRỢ GIÚP?</h4>
 											<ul>
 												
 												<li class="na-me">
 													<select id="country" name="issue" class="frm-field required sect" required="">
-														<option value="">Select Issue</option> 		
-														<option value="Booking Issues">Booking Issues</option>
-														<option value="Cancellation"> Cancellation</option>
-														<option value="Refund">Refund</option>
-														<option value="Other">Other</option>														
+														<option value="">Chọn vấn đề</option> 		
+														<option value="Booking Issues">Vấn đề đặt trước</option>
+														<option value="Cancellation">Huỷ bỏ</option>
+														<option value="Refund">Hoàn tiền</option>
+														<option value="Other">Khác</option>														
 													</select>
 												</li>
 											
@@ -55,7 +55,7 @@ echo "<script type='text/javascript'> document.location = 'thankyou.php'; </scri
 											</ul>
 											<div class="sub-bn">
 												<form>
-													<button type="submit" name="submit" class="subbtn">Submit</button>
+													<button type="submit" name="submit" class="subbtn">Gửi</button>
 												</form>
 											</div>
 									</div>

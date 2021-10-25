@@ -63,7 +63,7 @@ error:function (){}
 											</div>
 											<div class="login-right">
 												<form name="signup" method="post">
-													<h3>Create your account </h3>
+													<h3>Tạo tài khoản</h3>
 					
 
 				<input type="text" value="" placeholder="Full Name" name="fname" autocomplete="off" required="">
@@ -76,7 +76,7 @@ error:function (){}
 											</div>
 												<div class="clearfix"></div>								
 										</div>
-											<p>By logging in you agree to our <a href="page.php?type=terms">Terms and Conditions</a> and <a href="page.php?type=privacy">Privacy Policy</a></p>
+											<p>Bằng cách đăng nhập, bạn đồng ý với <a href="page.php?type=terms">Các điều khoản và điều kiện</a> và <a href="page.php?type=privacy">Chính sách bảo mật </a></p>
 									</div>
 								</div>
 							</section>

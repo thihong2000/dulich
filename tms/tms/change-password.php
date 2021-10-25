@@ -106,17 +106,17 @@ return true;
 				else if($msg){?><div class="succWrap"><strong>Thành công</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
 	<p style="width: 350px;">
 		
-			<b>Mật khẩu hiện tại</b>  <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Current Password" required="">
+			<b>Mật khẩu hiện tại</b>  <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Nhập mật khẩu hiện tại" required="">
 	</p> 
 
 <p style="width: 350px;">
 <b>Mật khẩu mới</b>
-<input type="password" class="form-control" name="newpassword" id="newpassword" placeholder="New Password" required="">
+<input type="password" class="form-control" name="newpassword" id="newpassword" placeholder="Nhập mật khẩu mới" required="">
 </p>
 
 <p style="width: 350px;">
 <b>Xác nhận mật khẩu</b>
-	<input type="password" class="form-control" name="confirmpassword" id="confirmpassword" placeholder="Confrim Password" required="">
+	<input type="password" class="form-control" name="confirmpassword" id="confirmpassword" placeholder="Xác nhận mật khẩu" required="">
 			</p>
 
 			<p style="width: 350px;">

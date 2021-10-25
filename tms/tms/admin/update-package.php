@@ -110,34 +110,34 @@ foreach($results as $result)
 								<div class="form-group">
 									<label for="focusedinput" class="col-sm-2 control-label">Tên gói</label>
 									<div class="col-sm-8">
-										<input type="text" class="form-control1" name="packagename" id="packagename" placeholder="Create Package" value="<?php echo htmlentities($result->PackageName);?>" required>
+										<input type="text" class="form-control1" name="packagename" id="packagename" placeholder="Tạo gói" value="<?php echo htmlentities($result->PackageName);?>" required>
 									</div>
 								</div>
 <div class="form-group">
 									<label for="focusedinput" class="col-sm-2 control-label">Loại gói</label>
 									<div class="col-sm-8">
-										<input type="text" class="form-control1" name="packagetype" id="packagetype" placeholder=" Package Type eg- Family Package / Couple Package" value="<?php echo htmlentities($result->PackageType);?>" required>
+										<input type="text" class="form-control1" name="packagetype" id="packagetype" placeholder=" Loại gói vd: Gói gia đình / Gói cặp đôi" value="<?php echo htmlentities($result->PackageType);?>" required>
 									</div>
 								</div>
 
 <div class="form-group">
 									<label for="focusedinput" class="col-sm-2 control-label">Địa điểm gói</label>
 									<div class="col-sm-8">
-										<input type="text" class="form-control1" name="packagelocation" id="packagelocation" placeholder=" Package Location" value="<?php echo htmlentities($result->PackageLocation);?>" required>
+										<input type="text" class="form-control1" name="packagelocation" id="packagelocation" placeholder="Nhập địa điểm gói" value="<?php echo htmlentities($result->PackageLocation);?>" required>
 									</div>
 								</div>
 
 <div class="form-group">
 									<label for="focusedinput" class="col-sm-2 control-label">Giá trọn gói tính bằng VND</label>
 									<div class="col-sm-8">
-										<input type="text" class="form-control1" name="packageprice" id="packageprice" placeholder=" Package Price is USD" value="<?php echo htmlentities($result->PackagePrice);?>" required>
+										<input type="text" class="form-control1" name="packageprice" id="packageprice" placeholder=" Giá trọn gói là VND" value="<?php echo htmlentities($result->PackagePrice);?>" required>
 									</div>
 								</div>
 
 <div class="form-group">
 									<label for="focusedinput" class="col-sm-2 control-label">Tính năng gói</label>
 									<div class="col-sm-8">
-										<input type="text" class="form-control1" name="packagefeatures" id="packagefeatures" placeholder="Package Features Eg-free Pickup-drop facility" value="<?php echo htmlentities($result->PackageFetures);?>" required>
+										<input type="text" class="form-control1" name="packagefeatures" id="packagefeatures" placeholder="Đặc điểm gói Ví dụ: Dịch vụ đón trả khách miễn phí" value="<?php echo htmlentities($result->PackageFetures);?>" required>
 									</div>
 								</div>		
 
@@ -145,13 +145,13 @@ foreach($results as $result)
 <div class="form-group">
 									<label for="focusedinput" class="col-sm-2 control-label">Chi tiết gói</label>
 									<div class="col-sm-8">
-										<textarea class="form-control" rows="5" cols="50" name="packagedetails" id="packagedetails" placeholder="Package Details" required><?php echo htmlentities($result->PackageDetails);?></textarea> 
+										<textarea class="form-control" rows="5" cols="50" name="packagedetails" id="packagedetails" placeholder="Chi tiết gói" required><?php echo htmlentities($result->PackageDetails);?></textarea> 
 									</div>
 								</div>															
 <div class="form-group">
 <label for="focusedinput" class="col-sm-2 control-label">Ảnh gói</label>
 <div class="col-sm-8">
-<img src="pacakgeimages/<?php echo htmlentities($result->PackageImage);?>" width="200">&nbsp;&nbsp;&nbsp;<a href="change-image.php?imgid=<?php echo htmlentities($result->PackageId);?>">Change Image</a>
+<img src="pacakgeimages/<?php echo htmlentities($result->PackageImage);?>" width="200">&nbsp;&nbsp;&nbsp;<a href="change-image.php?imgid=<?php echo htmlentities($result->PackageId);?>">Thay đổi ảnh</a>
 </div>
 </div>
 

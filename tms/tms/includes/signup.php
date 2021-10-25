@@ -66,11 +66,11 @@ error:function (){}
 													<h3>Tạo tài khoản</h3>
 					
 
-				<input type="text" value="" placeholder="Full Name" name="fname" autocomplete="off" required="">
-				<input type="text" value="" placeholder="Mobile number" maxlength="10" name="mobilenumber" autocomplete="off" required="">
-		<input type="text" value="" placeholder="Email id" name="email" id="email" onBlur="checkAvailability()" autocomplete="off"  required="">	
+				<input type="text" value="" placeholder="Họ và tên" name="fname" autocomplete="off" required="">
+				<input type="text" value="" placeholder="Nhập số điện thoại" maxlength="10" name="mobilenumber" autocomplete="off" required="">
+		<input type="text" value="" placeholder="ID Email" name="email" id="email" onBlur="checkAvailability()" autocomplete="off"  required="">	
 		 <span id="user-availability-status" style="font-size:12px;"></span> 
-	<input type="password" value="" placeholder="Password" name="password" required="">	
+	<input type="password" value="" placeholder="Nhập mật khẩu" name="password" required="">	
 													<input type="submit" name="submit" id="submit" value="CREATE ACCOUNT">
 												</form>
 											</div>

@@ -102,34 +102,34 @@ $error="Something went wrong. Please try again";
 								<div class="form-group">
 									<label for="focusedinput" class="col-sm-2 control-label">Tên gói</label>
 									<div class="col-sm-8">
-										<input type="text" class="form-control1" name="packagename" id="packagename" placeholder="Create Package" required>
+										<input type="text" class="form-control1" name="packagename" id="packagename" placeholder="Tạo gói" required>
 									</div>
 								</div>
 <div class="form-group">
 									<label for="focusedinput" class="col-sm-2 control-label">Loại gói</label>
 									<div class="col-sm-8">
-										<input type="text" class="form-control1" name="packagetype" id="packagetype" placeholder=" Package Type eg- Family Package / Couple Package" required>
+										<input type="text" class="form-control1" name="packagetype" id="packagetype" placeholder=" Loại gói vd: Gói gia đình / Gói cặp đôi" required>
 									</div>
 								</div>
 
 <div class="form-group">
 									<label for="focusedinput" class="col-sm-2 control-label">Địa điểm gói</label>
 									<div class="col-sm-8">
-										<input type="text" class="form-control1" name="packagelocation" id="packagelocation" placeholder=" Package Location" required>
+										<input type="text" class="form-control1" name="packagelocation" id="packagelocation" placeholder=" Nhập Địa điểm gói" required>
 									</div>
 								</div>
 
 <div class="form-group">
 									<label for="focusedinput" class="col-sm-2 control-label">Giá trọn gói tính bằng VND</label>
 									<div class="col-sm-8">
-										<input type="text" class="form-control1" name="packageprice" id="packageprice" placeholder=" Package Price is USD" required>
+										<input type="text" class="form-control1" name="packageprice" id="packageprice" placeholder=" Giá trọn gói là VND" required>
 									</div>
 								</div>
 
 <div class="form-group">
 									<label for="focusedinput" class="col-sm-2 control-label">Tính năng gói</label>
 									<div class="col-sm-8">
-										<input type="text" class="form-control1" name="packagefeatures" id="packagefeatures" placeholder="Package Features Eg-free Pickup-drop facility" required>
+										<input type="text" class="form-control1" name="packagefeatures" id="packagefeatures" placeholder="Đặc điểm gói Ví dụ: Dịch vụ đón trả khách miễn phí" required>
 									</div>
 								</div>		
 
@@ -137,7 +137,7 @@ $error="Something went wrong. Please try again";
 <div class="form-group">
 									<label for="focusedinput" class="col-sm-2 control-label">Chi tiết gói</label>
 									<div class="col-sm-8">
-										<textarea class="form-control" rows="5" cols="50" name="packagedetails" id="packagedetails" placeholder="Package Details" required></textarea> 
+										<textarea class="form-control" rows="5" cols="50" name="packagedetails" id="packagedetails" placeholder="Chi tiết gói" required></textarea> 
 									</div>
 								</div>															
 <div class="form-group">

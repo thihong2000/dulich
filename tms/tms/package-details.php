@@ -120,11 +120,11 @@ foreach($results as $result)
 					<div class="ban-bottom">
 				<div class="bnr-right">
 				<label class="inputLabel">Từ</label>
-				<input class="date" id="datepicker" type="text" placeholder="dd-mm-yyyy"  name="fromdate" required="">
+				<input class="date" id="datepicker" type="text" placeholder="Ngày-tháng-năm"  name="fromdate" required="">
 			</div>
 			<div class="bnr-right">
 				<label class="inputLabel">Đến</label>
-				<input class="date" id="datepicker1" type="text" placeholder="dd-mm-yyyy" name="todate" required="">
+				<input class="date" id="datepicker1" type="text" placeholder="Ngày-tháng-năm" name="todate" required="">
 			</div>
 			</div>
 						<div class="clearfix"></div>

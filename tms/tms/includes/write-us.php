@@ -49,7 +49,7 @@ echo "<script type='text/javascript'> document.location = 'thankyou.php'; </scri
 												</li>
 											
 												<li class="descrip">
-									<input class="special" type="text" placeholder="description"  name="description" required="">
+									<input class="special" type="text" placeholder="Miêu tả"  name="description" required="">
 												</li>
 													<div class="clearfix"></div>
 											</ul>

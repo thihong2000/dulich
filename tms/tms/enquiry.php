@@ -91,21 +91,21 @@ $error="Something went wrong. Please try again";
 				else if($msg){?><div class="succWrap"><strong>Thành công</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
 	<p style="width: 350px;">
 		
-			<b>Họ và tên</b>  <input type="text" name="fname" class="form-control" id="fname" placeholder="Full Name" required="">
+			<b>Họ và tên</b>  <input type="text" name="fname" class="form-control" id="fname" placeholder="Họ và tên" required="">
 	</p> 
 <p style="width: 350px;">
-<b>Email</b>  <input type="email" name="email" class="form-control" id="email" placeholder="Valid Email id" required="">
+<b>Email</b>  <input type="email" name="email" class="form-control" id="email" placeholder="Id Email hợp lệ" required="">
 	</p> 
 
 	<p style="width: 350px;">
-<b>Số điện thoại</b>  <input type="text" name="mobileno" class="form-control" id="mobileno" maxlength="10" placeholder="10 Digit mobile No" required="">
+<b>Số điện thoại</b>  <input type="text" name="mobileno" class="form-control" id="mobileno" maxlength="10" placeholder="Nhập số điện thoại" required="">
 	</p> 
 
 	<p style="width: 350px;">
-<b>Đối tượng</b>  <input type="text" name="subject" class="form-control" id="subject"  placeholder="Subject" required="">
+<b>Đối tượng</b>  <input type="text" name="subject" class="form-control" id="subject"  placeholder="Đối tượng" required="">
 	</p> 
 	<p style="width: 350px;">
-<b>Mô tả</b>  <textarea name="description" class="form-control" rows="6" cols="50" id="description"  placeholder="Description" required=""></textarea> 
+<b>Mô tả</b>  <textarea name="description" class="form-control" rows="6" cols="50" id="description"  placeholder="Miêu tả" required=""></textarea> 
 	</p> 
 
 			<p style="width: 350px;">

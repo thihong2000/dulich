@@ -156,7 +156,7 @@ foreach($results as $result)
 				<a href="#"><i class="fa fa-ticket"></i></a>
 			</div>
 			<div class="rou-rgt">
-				<h3>8,00,00,000+</h3>
+				<h3>6,00,00,000+</h3>
 				<p>Đặt trước</p>
 			</div>
 				<div class="clearfix"></div>

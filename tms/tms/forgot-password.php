@@ -102,22 +102,22 @@ return true;
 				else if($msg){?><div class="succWrap"><strong>Thành công</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
 	<p style="width: 350px;">
 		
-			<b>Id Email </b>  <input type="email" name="email" class="form-control" id="email" placeholder="Reg Email id" required="">
+			<b>Id Email </b>  <input type="email" name="email" class="form-control" id="email" placeholder="ID Email hợp lệ" required="">
 	</p> 
 
 	<p style="width: 350px;">
 		
-			<b>Số điện thoại</b>  <input type="text" name="mobile" class="form-control" id="mobile" placeholder="Reg Mobile no" required="">
+			<b>Số điện thoại</b>  <input type="text" name="mobile" class="form-control" id="mobile" placeholder="Nhập số điện thoại" required="">
 	</p> 
 
 <p style="width: 350px;">
 <b>Mật khẩu mới</b>
-<input type="password" class="form-control" name="newpassword" id="newpassword" placeholder="New Password" required="">
+<input type="password" class="form-control" name="newpassword" id="newpassword" placeholder="Nhập mật khẩu mới" required="">
 </p>
 
 <p style="width: 350px;">
 <b>Xác nhận mật khẩu</b>
-	<input type="password" class="form-control" name="confirmpassword" id="confirmpassword" placeholder="Confrim Password" required="">
+	<input type="password" class="form-control" name="confirmpassword" id="confirmpassword" placeholder="Xác nhận mật khẩu" required="">
 			</p>
 
 			<p style="width: 350px;">

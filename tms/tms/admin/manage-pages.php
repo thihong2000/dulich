@@ -199,7 +199,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 									<div class="col-sm-8">
 
 
-										<textarea class="form-control" rows="5" cols="50" name="pgedetails" id="pgedetails" placeholder="Package Details" required>
+										<textarea class="form-control" rows="5" cols="50" name="pgedetails" id="pgedetails" placeholder="Chi tiết gói" required>
 										<?php 
 $pagetype=$_GET['type'];
 $sql = "SELECT detail from tblpages where type=:pagetype";

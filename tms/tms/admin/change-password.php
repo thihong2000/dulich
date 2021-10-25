@@ -113,7 +113,7 @@ return true;
 									<span class="input-group-addon">
 										<i class="fa fa-key"></i>
 									</span>
-									<input type="password" name="password" class="form-control1" id="exampleInputPassword1" placeholder="Current Password" required="">
+									<input type="password" name="password" class="form-control1" id="exampleInputPassword1" placeholder="Nhập mật khẩu hiện tại" required="">
 								</div>
 							</div>
 						</div>
@@ -125,7 +125,7 @@ return true;
 									<span class="input-group-addon">
 										<i class="fa fa-key"></i>
 									</span>
-									<input type="password" class="form-control1" name="newpassword" id="newpassword" placeholder="New Password" required="">
+									<input type="password" class="form-control1" name="newpassword" id="newpassword" placeholder="Nhập mật khẩu mới" required="">
 								</div>
 							</div>
 						</div>
@@ -137,7 +137,7 @@ return true;
 									<span class="input-group-addon">
 										<i class="fa fa-key"></i>
 									</span>
-									<input type="password" class="form-control1" name="confirmpassword" id="confirmpassword" placeholder="Confrim Password" required="">
+									<input type="password" class="form-control1" name="confirmpassword" id="confirmpassword" placeholder="Xác nhận mật khẩu" required="">
 								</div>
 							</div>
 						</div>

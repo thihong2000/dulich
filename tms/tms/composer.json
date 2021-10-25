@@ -1,0 +1,6 @@
+{
+    "require": {
+        "tcg/voyager": "^1.5",
+        "phpunit/phpunit": "^9"
+    }
+}

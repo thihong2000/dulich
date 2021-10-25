@@ -89,7 +89,7 @@ include('includes/config.php');
 
 
 	
-	<h3>Package List</h3>
+	<h3>Các Gói Du Lịch</h3>
 
 					
 <?php $sql = "SELECT * from tbltourpackages order by rand() limit 4";
@@ -106,7 +106,7 @@ foreach($results as $result)
 					<img src="admin/pacakgeimages/<?php echo htmlentities($result->PackageImage);?>" class="img-responsive" alt="">
 				</div>
 				<div class="col-md-6 room-midle wow fadeInUp animated" data-wow-delay=".5s">
-					<h4>Package Name: <?php echo htmlentities($result->PackageName);?></h4>
+					<h4>Tên Gói: <?php echo htmlentities($result->PackageName);?></h4>
 					<h6>Package Type : <?php echo htmlentities($result->PackageType);?></h6>
 					<p><b>Package Location :</b> <?php echo htmlentities($result->PackageLocation);?></p>
 					<p><b>Features</b> <?php echo htmlentities($result->PackageFetures);?></p>

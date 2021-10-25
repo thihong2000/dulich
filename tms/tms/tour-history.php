@@ -57,7 +57,7 @@ $error="You can't cancel booking before 24 hours";
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>TMS | Tourism Management System</title>
+<title>Travelnam</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Tourism Management System In PHP" />
@@ -110,22 +110,22 @@ $error="You can't cancel booking before 24 hours";
 <!--- privacy ---->
 <div class="privacy">
 	<div class="container">
-		<h3 class="wow fadeInDown animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInDown;">My Tour History</h3>
+		<h3 class="wow fadeInDown animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInDown;">Lịch sử các tour của tôi</h3>
 		<form name="chngpwd" method="post" onSubmit="return valid();">
-		 <?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
-				else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
+		 <?php if($error){?><div class="errorWrap"><strong>LỖI</strong>:<?php echo htmlentities($error); ?> </div><?php } 
+				else if($msg){?><div class="succWrap"><strong>THÀNH CÔNG</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
 	<p>
 	<table border="1" width="100%">
 <tr align="center">
 <th>#</th>
-<th>Booking Id</th>
-<th>Package Name</th>	
-<th>From</th>
-<th>To</th>
-<th>Comment</th>
-<th>Status</th>
-<th>Booking Date</th>
-<th>Action</th>
+<th>Id</th>
+<th>Tên Gói</th>	
+<th>Từ</th>
+<th>Đến</th>
+<th>Bình luận</th>
+<th>Trạng thái</th>
+<th>Ngày đặt</th>
+<th>Hoạt động</th>
 </tr>
 <?php 
 

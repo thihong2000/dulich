@@ -62,7 +62,7 @@ error:function (){}
 												</ul>
 											</div>
 											<div class="login-right">
-												<form name="Đăng ký" method="post">
+												<form name="signup" method="post">
 													<h3>Tạo tài khoản</h3>
 					
 

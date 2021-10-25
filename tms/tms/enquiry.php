@@ -105,7 +105,7 @@ $error="Something went wrong. Please try again";
 <b>Đối tượng</b>  <input type="text" name="subject" class="form-control" id="subject"  placeholder="Đối tượng" required="">
 	</p> 
 	<p style="width: 350px;">
-<b>Mô tả</b>  <textarea name="description" class="form-control" rows="6" cols="50" id="description"  placeholder="Miêu tả" required=""></textarea> 
+<b>Mô tả</b>  <textarea name="description" class="form-control" rows="6" cols="50" id="description"  placeholder="Nhập mô tả" required=""></textarea> 
 	</p> 
 
 			<p style="width: 350px;">

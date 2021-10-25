@@ -6,7 +6,7 @@ include('includes/config.php');
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>TMS | Tourism Management System</title>
+<title>Travelnam</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -107,13 +107,13 @@ foreach($results as $result)
 				</div>
 				<div class="col-md-6 room-midle wow fadeInUp animated" data-wow-delay=".5s">
 					<h4>Tên Gói: <?php echo htmlentities($result->PackageName);?></h4>
-					<h6>Package Type : <?php echo htmlentities($result->PackageType);?></h6>
-					<p><b>Package Location :</b> <?php echo htmlentities($result->PackageLocation);?></p>
-					<p><b>Features</b> <?php echo htmlentities($result->PackageFetures);?></p>
+					<h6>Thể lọai: <?php echo htmlentities($result->PackageType);?></h6>
+					<p><b>Địa điểm:</b> <?php echo htmlentities($result->PackageLocation);?></p>
+					<p><b>Đặc điểm</b> <?php echo htmlentities($result->PackageFetures);?></p>
 				</div>
 				<div class="col-md-3 room-right wow fadeInRight animated" data-wow-delay=".5s">
-					<h5>USD <?php echo htmlentities($result->PackagePrice);?></h5>
-					<a href="package-details.php?pkgid=<?php echo htmlentities($result->PackageId);?>" class="view">Details</a>
+					<h5>VND <?php echo htmlentities($result->PackagePrice);?></h5>
+					<a href="package-details.php?pkgid=<?php echo htmlentities($result->PackageId);?>" class="view">Chi tiết</a>
 				</div>
 				<div class="clearfix"></div>
 			</div>
@@ -121,7 +121,7 @@ foreach($results as $result)
 <?php }} ?>
 			
 		
-<div><a href="package-list.php" class="view">View More Packages</a></div>
+<div><a href="package-list.php" class="view">Xem các gói khác</a></div>
 </div>
 			<div class="clearfix"></div>
 	</div>

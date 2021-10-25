@@ -34,7 +34,7 @@ $error="Something went wrong. Please try again";
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>TMS | Package Details</title>
+<title>Travelnam</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <script type="applijewelleryion/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
@@ -133,7 +133,7 @@ foreach($results as $result)
 					<h3>USD.800</h3>
 				</div>
 			</div>
-		<h3>Package Details</h3>
+		<h3>Chi Tiết Gói</h3>
 				<p style="padding-top: 1%"><?php echo htmlentities($result->PackageDetails);?> </p>	
 				<div class="clearfix"></div>
 		</div>
@@ -143,17 +143,17 @@ foreach($results as $result)
 				<ul>
 				
 					<li class="spe">
-						<label class="inputLabel">Comment</label>
+						<label class="inputLabel">Bình luận</label>
 						<input class="special" type="text" name="comment" required="">
 					</li>
 					<?php if($_SESSION['login'])
 					{?>
 						<li class="spe" align="center">
-					<button type="submit" name="submit2" class="btn-primary btn">Book</button>
+					<button type="submit" name="submit2" class="btn-primary btn">Đặt</button>
 						</li>
 						<?php } else {?>
 							<li class="sigi" align="center" style="margin-top: 1%">
-							<a href="#" data-toggle="modal" data-target="#myModal4" class="btn-primary btn" > Book</a></li>
+							<a href="#" data-toggle="modal" data-target="#myModal4" class="btn-primary btn" > Đặt</a></li>
 							<?php } ?>
 					<div class="clearfix"></div>
 				</ul>

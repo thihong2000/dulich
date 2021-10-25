@@ -11,7 +11,7 @@ else{
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>TMS | Tourism Management System</title>
+<title>Travelnam</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Tourism Management System In PHP" />
@@ -72,12 +72,12 @@ else{
 	<table border="1" width="100%">
 <tr align="center">
 <th>#</th>
-<th>Ticket Id</th>
-<th>Issue</th>	
-<th>Description</th>
-<th>Admin Remark</th>
-<th>Reg Date</th>
-<th>Remark date</th>
+<th>ID</th>
+<th>Vấn đề</th>	
+<th>Mô tả</th>
+<th>Nhận xét Admin</th>
+<th>Ngày đăng ký</th>
+<th>Ngày nhận xét</th>
 
 </tr>
 <?php 

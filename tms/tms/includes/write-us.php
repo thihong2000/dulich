@@ -35,7 +35,7 @@ echo "<script type='text/javascript'> document.location = 'thankyou.php'; </scri
 							<form name="help" method="post">
 								<div class="modal-body modal-spa">
 									<div class="writ">
-										<h4>CẦN SỰ TRỢ GIÚP?</h4>
+										<h4>BẠN CẦN SỰ TRỢ GIÚP?</h4>
 											<ul>
 												
 												<li class="na-me">

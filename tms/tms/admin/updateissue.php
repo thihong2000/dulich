@@ -49,7 +49,7 @@ window.print();
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
 
     <tr height="50">
-      <td colspan="2" class="fontkink2" style="padding-left:0px;"><div class="fontpink2"> <b>Cập nhật nhận xét !</b></div></td>
+      <td colspan="2" class="fontkink2" style="padding-left:0px;"><div class="fontpink2"> <b>Cập nhật nhận xét!</b></div></td>
       
     </tr>
 
@@ -80,7 +80,7 @@ foreach($results as $result)
 ?>
 
      <tr style=''>
-      <td class="fontkink1" >Nhận xét:</td>
+      <td class="fontkink1" >Nhận xét: </td>
       <td class="fontkink" align="justify" ><span class="fontkink">
         <textarea cols="50" rows="7" name="remark" required="required" ></textarea>
         </span></td>

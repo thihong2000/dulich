@@ -110,7 +110,7 @@ foreach($results as $result)
 							<td><?php echo htmlentities($result->PackageName);?></td>
 							<td><?php echo htmlentities($result->PackageType);?></td>
 							<td><?php echo htmlentities($result->PackageLocation);?></td>
-							<td>$<?php echo htmlentities($result->PackagePrice);?></td>
+							<td>VND<?php echo htmlentities($result->PackagePrice);?></td>
 							<td><?php echo htmlentities($result->Creationdate);?></td>
 							<td><a href="update-package.php?pid=<?php echo htmlentities($result->PackageId);?>"><button type="button" class="btn btn-primary btn-block">Xem chi tiết</button></a></td>
 						  </tr>

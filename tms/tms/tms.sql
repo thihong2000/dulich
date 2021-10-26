@@ -34,7 +34,7 @@ CREATE TABLE `admin` (
   `UserName` varchar(100) DEFAULT NULL,
   `Password` varchar(100) DEFAULT NULL,
   `updationDate` timestamp NULL DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=Utf8mb4;
 --
 -- Dumping data for table `admin`
 --
@@ -85,7 +85,7 @@ CREATE TABLE `tblenquiry` (
   `Description` mediumtext DEFAULT NULL,
   `PostingDate` timestamp NULL DEFAULT current_timestamp(),
   `Status` int(1) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=Utf8mb4;
 
 --
 -- Dumping data for table `tblenquiry`
@@ -110,7 +110,7 @@ CREATE TABLE `tblissues` (
   `PostingDate` timestamp NULL DEFAULT current_timestamp(),
   `AdminRemark` mediumtext DEFAULT NULL,
   `AdminremarkDate` timestamp NULL DEFAULT NULL ON UPDATE current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=Utf8mb4;
 
 --
 -- Dumping data for table `tblissues`
@@ -135,7 +135,7 @@ CREATE TABLE `tblpages` (
   `id` int(11) NOT NULL,
   `type` nvarchar(255) DEFAULT '',
   `detail` longtext DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
+) ENGINE=MyISAM DEFAULT CHARSET=Utf8mb4;
 
 --
 -- Dumping data for table `tblpages`
@@ -158,28 +158,28 @@ CREATE TABLE `tbltourpackages` (
   `PackageName` nvarchar(200) DEFAULT NULL,
   `PackageType` nvarchar(150) DEFAULT NULL,
   `PackageLocation` nvarchar(100) DEFAULT NULL,
-  `PackagePrice` int(11) DEFAULT NULL,
+  `PackagePrice` int(20) DEFAULT NULL,
   `PackageFetures` nvarchar(255) DEFAULT NULL,
   `PackageDetails` mediumtext DEFAULT NULL,
   `PackageImage` nvarchar(100) DEFAULT NULL,
   `Creationdate` timestamp NULL DEFAULT current_timestamp(),
   `UpdationDate` timestamp NULL DEFAULT NULL ON UPDATE current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=Utf8mb4;
 
 --
 -- Dumping data for table `tbltourpackages`
 --
 
 INSERT INTO `tbltourpackages` (`PackageId`, `PackageName`, `PackageType`, `PackageLocation`, `PackagePrice`, `PackageFetures`, `PackageDetails`, `PackageImage`, `Creationdate`, `UpdationDate`) VALUES
-(1, 'Swiss Paris Delight Premium 2020 (Group Package)', 'Group Package', 'Paris and Switzerland', 6000, ' Round trip Economy class airfare valid for the duration of the holiday - Airport taxes - Accommodation for 3 nights in Paris and 3 nights in scenic Switzerland - Enjoy continental breakfasts every morning - Enjoy 5 Indian dinners in Mainland Europe - Exp', 'Pick this holiday for a relaxing vacation in Paris and Switzerland. Your tour embarks from Paris. Enjoy an excursion to popular attractions like the iconic Eiffel Tower. After experiencing the beautiful city, you will drive past mustard fields through Burgundy to reach Switzerland. While there, you can opt for a tour to Interlaken and then to the Trummelbach Falls. Photostop at Zurich Lake and a cable car ride to Mt. Titlis are the main highlights of the holiday.', '1581490262_2_1.jpg', '2020-07-08 05:21:58', NULL),
-(2, 'Bhutan Holidays - Thimphu and Paro Special', 'Family Package', 'Bhutan', 3000, 'Free Wi-fi, Free Breakfast, Free Pickup and drop facility ', 'Visit to Tiger\'s Nest Monastery | Complimentary services of a Professional Guide', 'BHUTAN-THIMPU-PARO-PUNAKHA-TOUR-6N-7D.jpeg', '2020-07-08 05:37:40', '2020-07-08 06:09:01'),
-(3, 'Soulmate Special Bali - 7 Nights', 'Couple Package', 'Indonesia(Bali)', 5000, 'Free Pickup and drop facility, Free Wi-fi , Free professional guide', 'Airport transfers by private car | Popular Sightseeing included | Suitable for Couple and budget travelers', '1583140977_5_11.jpg', '2020-07-08 05:41:07', '2020-07-09 05:23:27'),
-(4, 'Kerala - A Lovers Paradise - Value Added', 'Family Package', 'Kerala', 1000, 'Free Wi-fi, Free pick up and drop facility,', 'Visit Matupetty Dam, tea plantation and a spice garden | View sunset in Kanyakumari | AC Car at disposal for 2hrs extra (once per city)', 'images (2).jpg', '2020-07-08 05:45:58', NULL),
-(5, 'Short Trip To Dubai', 'Family', 'Dubai', 4500, 'Free pick up and drop facility, Free Wi-fi, Free breakfast', 'A Holiday Package for the entire family.', 'unnamed.jpg', '2020-07-08 05:49:13', NULL),
-(6, 'Sikkim Delight with Darjeeling (customizable)', 'Group', 'Sikkim', 3500, 'Free Breakfast, Free Pick up drop facility', 'Changu Lake and New Baba Mandir excursion | View the sunrise from Tiger Hill | Get Blessed at the famous Rumtek Monastery', 'download (2).jpg', '2020-07-08 05:51:26', NULL),
-(7, '6 Days in Guwahati and Shillong With Cherrapunji Excursion', 'Family Package', 'Guwahati(Sikkim)', 4500, 'Breakfast,  Accommodation » Pick-up » Drop » Sightseeing', 'After arrival at Guwahati airport meet our representative & proceed for Shillong. Shillong is the capital and hill station of Meghalaya, also known as Abode of Cloud, one of the smallest states in India. En route visit Barapani lake. By afternoon reach at Shillong. Check in to the hotel. Evening is leisure. Spent time as you want. Visit Police bazar. Overnight stay at Shillong.', '95995.jpg', '2020-07-08 05:54:42', NULL),
-(8, 'Grand Week in North East - Lachung, Lachen and Gangtok', 'Domestic Packages', 'Sikkim', 4500, 'Free Breakfast, Free Wi-fi', 'Changu Lakeand New Baba Mandir excursion | Yumthang Valley tour | Gurudongmar Lake excursion | Night stay in Lachen', 'download (3).jpg', '2020-07-08 06:05:24', NULL),
-(9, 'Gangtok & Darjeeling Holiday (Without Flights)', 'Family Package', 'Sikkim', 1000, 'Free Wi-fi, Free pickup and drop facility', 'Ideal tour for Family | Sightseeing in Gangtok and Darjeeling | Full day excursion to idyllic Changu Lake | Visit to Ghoom Monastery', '1540382781_shutterstock_661867435.jpg.jpg', '2020-07-08 06:07:48', NULL);
+(1, 'Combo du lịch Đà Lạt 3 ngày ', 'Gói cá nhân', 'Đà Lạt', 2699000, 'Wi-Fi miễn phí','Du lịch Đà Lạt là một thành phố mộng mơ,với vẻ đẹp lãng mạn không kém phần mơ mộng, Khách Du lịch Đà Lạt thường gọi nơi đây bằng nhiều cái tên : thành phố ngàn hoa, thành phố sương mù, phố núi Đà Lạt , hay tiểu Paris, mỗi cái tên đều chất chứa bao tình yêu.', '1581490262_2_1.jpg', '2021-12-08 01:21:58','2021-12-11 5:00:00'),
+(2, 'Du lịch Phú Yên - Quy Nhơn - Kỳ Co - KDL Hầm Hồ', 'Gói gia đình ( Nhóm 4 Khách )', 'Phú Yên - Quy Nhơn - Kỳ Co - KDL Hầm Hồ ',6099000, 'Wi-Fi miễn phí, bữa sáng miễn phí', 'Quy Nhơn - Phú Yên 4 ngày 3 đêm khởi hành từ Đà Nẵng 2021 - Bình Định từ lâu đã luôn nổi tiếng với những địa điểm đẹp và nổi tiếng, không chỉ nổi tiếng với Gềnh Đá Đĩa, Đầm Ô Loan… Với tour du lịch Bình Định Quý khách còn được khám phá rất nhiều các danh lam thắng cảnh đẹp khác.', 'BHUTAN-THIMPU-PARO-PUNAKHA-TOUR-6N-7D.jpeg', '2021-11-08 05:37:40', '2020-11-12 12:09:01'),
+(3, 'Du lịch Hà Nội - Sapa - Bản Cát Cát - Fansipan (2 ngày 1 đêm)', 'Gói cá nhân', 'Hà Nội - Sapa - Bản Cát Cát - Fansipan', 12000000, 'Wi-Fi miễn phí, bữa sáng miễn phí', 'Hà Nội - Sapa - một thị trấn nhỏ cổ kính nằm trong lòng dãy Hoàng Liên Sơn là cái tên đã đi vào tâm khảm của nhiều du khách. Một mảnh đất bình yên nhưng ẩn chứa biết bao điều kỳ diệu của tạo hóa. Nơi đây có những ngọn núi, quả đồi trùng điệp trong sương mù,… Sapa đẹp như bức tranh sơn thủy hữu tình được sắp xếp theo một bố cục hài hòa.', '1583140977_5_11.jpg', '2021-11-08 06:41:07', '2020-11-10 12:10:27'),
+(4, 'Tour Du lịch Cam Ranh - Đảo Bình Ba ', 'Gói cá nhân', 'Cam Ranh - Đảo Bình Ba',4000000, 'Wi-Fi miễn phí', 'Du lịch Đảo Bình Ba - Đảo Bình Ba có lẽ đó là một cái tên khá lạ lẫm đối với nhiều người, nhưng đối với dân du lịch bụi hay phượt thì đây là một điểm du lịch rất tuyệt vời. Và chuyến du lịch đảo Bình Ba sẽ không làm bạn thất vọng bởi vẻ đẹp hoang sơ kỳ bí của nó.', 'images (2).jpg', '2021-12-08 05:45:58', NULL),
+(5, 'Combo Phú Quốc', 'Gói cá nhân', 'Phú Quốc', 9000000,'Wi-Fi miễn phí, bữa sáng miễn phí', 'Phú Quốc là hòn đảo lớn nhất Việt Nam, nằm trong vịnh Thái Lan. Đảo Phú Quốc cùng với các đảo nhỏ hơn ở lân cận và quần đảo Thổ Chu nằm cách đó 55 hải lý về phía tây nam hợp thành thành phố Phú Quốc thuộc tỉnh Kiên Giang. Đây cũng là thành phố đảo đầu tiên của Việt Nam', 'unnamed.jpg', '2021-11-02 05:49:13', NULL),
+(6, 'Du lịch Vũng Tàu', 'Gói gia đình ( Nhóm 4 Khách )', 'Vũng Tàu', 5099000 , 'Wi-fi miễn phí, nước uống miễng phí.', 'Đến với Tour Vũng Tàu du khách cũng sẽ bị cuốn hút bởi phong cảnh của nơi đây, được thả hồn vào những con sóng nước, được thưởng thức những món đặc sản miền biển với giá cực kỳ hấp dẫn. Cùng tham khảo các tour Vũng Tàu của Du Lịch Việt để chọn cho mình một chuyến du lịch phù hợp, đầy hấp dẫn và thú vị.', 'download (2).jpg', '2021-12-08 08:51:26', NULL),
+(7, 'Du lịch Hạ Long', 'Gói gia đình ( Nhóm 6 Khách )', 'Vịnh Hạ Long',19500000, 'Wi-fi miễn phí, nước uống miễng phí.', 'Du lịch Hạ Long - Vịnh Hạ Long một trong Bảy kỳ quan thiên nhiên thế giới mới, và được Thế giới công nhận là di sản thiên nhiên thế giới. Chính bởi vẻ đẹp hùng vĩ và nguyên sơ, tour du lịch Hạ Long luôn là một sự lựa chọn hàng đầu được nhiều du khách cả trong và ngoài nước tìm đến để khám phá tham quan và du lịch.', '95995.jpg', '2021-11-18 05:54:42', NULL),
+(8, 'Tour Du lịch Đà Nẵng - Bán Đảo Sơn Trà ', 'Gói gia đình ( Nhóm 4 Khách )', 'Đà Nẵng', 4000000, 'Wi-fi miễn phí','Được mệnh danh là ‘’thành phố đáng đến’’ với dòng sông Hàn thơ mộng với cây cầu Rồng biểu tượng của Thành phố biển du lịch Đà Nẵng - nơi mà quý khách có thể cảm nhận được sự pha trộn giữa khí hậu miền Bắc, miền Nam. ', 'download (3).jpg', '2021-1-28 06:05:24', NULL),
+(9, 'Du lịch Côn Đảo', 'Gói cá nhân', 'Côn Đảo', 1000000,'Wi-Fi miễn phí, bữa sáng miễn phí', 'Côn Đảo nổi tiếng với vẻ đẹp hoang sơ, Côn Đảo ngày nay là một trong những điểm đến du lịch hấp dẫn du khách nhất ở Việt Nam cũng như quốc tế.', '1540382781_shutterstock_661867435.jpg.jpg', '2021-12-08 06:07:48', NULL);
 
 -- --------------------------------------------------------
 

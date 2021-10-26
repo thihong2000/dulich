@@ -21,7 +21,7 @@
 	<div class="container">
 		<ul class="tp-hd-lft wow fadeInLeft animated" data-wow-delay=".5s">
 			<li class="hm"><a href="index.php"><i class="fa fa-home"></i></a></li>
-				<li class="hm"><a href="admin/index.php">Đăng nhập với tư cách Quản trị viên</a></li>
+				<li class="hm"><a href="admin/index.php">Đăng nhập với tư cách Admin</a></li>
 		</ul>
 		<ul class="tp-hd-rgt wow fadeInRight animated" data-wow-delay=".5s"> 
 			<li class="tol">Gọi chúng tôi : 123-4568790</li>				
@@ -34,15 +34,6 @@
 <?php }?>
 <!--- /top-header ---->
 <!--- header ---->
-<div class="header">
-	<div class="container">
-		<div class="logo wow fadeInDown animated" data-wow-delay=".5s">
-			<a href="index.php"> <span>Travelnam</span></a>	
-		</div>
-	
-		<div class="clearfix"></div>
-	</div>
-</div>
 <!--- /header ---->
 <!--- footer-btm ---->
 <div class="footer-btm wow fadeInLeft animated" data-wow-delay=".5s">
@@ -59,26 +50,7 @@
 				  </button>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
-					<nav class="cl-effect-1">
-						<ul class="nav navbar-nav">
-							<li><a href="index.php">Trang chủ</a></li>
-							<li><a href="page.php?type=aboutus">Về chúng tôi</a></li>
-								<li><a href="package-list.php">Các Gói Du Lịch</a></li>
-								<li><a href="page.php?type=privacy">Chính sách bảo mật</a></li>
-								<li><a href="page.php?type=terms">Điều khoản</a></li>
-								<li><a href="page.php?type=contact">Liên hệ</a></li>
-								<?php if($_SESSION['login'])
-{?>
-								<li>Bạn cần hỗ trợ?<a href="#" data-toggle="modal" data-target="#myModal3"> / Hãy cho chúng tôi biết </a>  </li>
-								<?php } else { ?>
-								<li><a href="enquiry.php">Xem xét </a>  </li>
-								<?php } ?>
-								<div class="clearfix"></div>
-
-						</ul>
-					</nav>
-				</div><!-- /.navbar-collapse -->	
+			
 			</nav>
 		</div>
 		

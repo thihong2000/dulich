@@ -13,6 +13,7 @@ START TRANSACTION;
 SET time_zone = "+00:00";
 
 
+
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
@@ -33,8 +34,7 @@ CREATE TABLE `admin` (
   `UserName` varchar(100) DEFAULT NULL,
   `Password` varchar(100) DEFAULT NULL,
   `updationDate` timestamp NULL DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 --
 -- Dumping data for table `admin`
 --
@@ -57,9 +57,9 @@ CREATE TABLE `tblbooking` (
   `Comment` mediumtext DEFAULT NULL,
   `RegDate` timestamp NULL DEFAULT current_timestamp(),
   `status` int(11) DEFAULT NULL,
-  `CancelledBy` varchar(5) DEFAULT NULL,
+  `CancelledBy` nvarchar(5) DEFAULT NULL,
   `UpdationDate` timestamp NULL DEFAULT NULL ON UPDATE current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `tblbooking`
@@ -78,14 +78,14 @@ INSERT INTO `tblbooking` (`BookingId`, `PackageId`, `UserEmail`, `FromDate`, `To
 
 CREATE TABLE `tblenquiry` (
   `id` int(11) NOT NULL,
-  `FullName` varchar(100) DEFAULT NULL,
-  `EmailId` varchar(100) DEFAULT NULL,
+  `FullName` nvarchar(100) DEFAULT NULL,
+  `EmailId` nvarchar(100) DEFAULT NULL,
   `MobileNumber` char(10) DEFAULT NULL,
-  `Subject` varchar(100) DEFAULT NULL,
+  `Subject` nvarchar(100) DEFAULT NULL,
   `Description` mediumtext DEFAULT NULL,
   `PostingDate` timestamp NULL DEFAULT current_timestamp(),
   `Status` int(1) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `tblenquiry`
@@ -104,13 +104,13 @@ INSERT INTO `tblenquiry` (`id`, `FullName`, `EmailId`, `MobileNumber`, `Subject`
 
 CREATE TABLE `tblissues` (
   `id` int(11) NOT NULL,
-  `UserEmail` varchar(100) DEFAULT NULL,
-  `Issue` varchar(100) DEFAULT NULL,
+  `UserEmail` nvarchar(100) DEFAULT NULL,
+  `Issue` nvarchar(100) DEFAULT NULL,
   `Description` mediumtext DEFAULT NULL,
   `PostingDate` timestamp NULL DEFAULT current_timestamp(),
   `AdminRemark` mediumtext DEFAULT NULL,
   `AdminremarkDate` timestamp NULL DEFAULT NULL ON UPDATE current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `tblissues`
@@ -133,9 +133,9 @@ INSERT INTO `tblissues` (`id`, `UserEmail`, `Issue`, `Description`, `PostingDate
 
 CREATE TABLE `tblpages` (
   `id` int(11) NOT NULL,
-  `type` varchar(255) DEFAULT '',
+  `type` nvarchar(255) DEFAULT '',
   `detail` longtext DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `tblpages`
@@ -155,16 +155,16 @@ INSERT INTO `tblpages` (`id`, `type`, `detail`) VALUES
 
 CREATE TABLE `tbltourpackages` (
   `PackageId` int(11) NOT NULL,
-  `PackageName` varchar(200) DEFAULT NULL,
-  `PackageType` varchar(150) DEFAULT NULL,
-  `PackageLocation` varchar(100) DEFAULT NULL,
+  `PackageName` nvarchar(200) DEFAULT NULL,
+  `PackageType` nvarchar(150) DEFAULT NULL,
+  `PackageLocation` nvarchar(100) DEFAULT NULL,
   `PackagePrice` int(11) DEFAULT NULL,
-  `PackageFetures` varchar(255) DEFAULT NULL,
+  `PackageFetures` nvarchar(255) DEFAULT NULL,
   `PackageDetails` mediumtext DEFAULT NULL,
-  `PackageImage` varchar(100) DEFAULT NULL,
+  `PackageImage` nvarchar(100) DEFAULT NULL,
   `Creationdate` timestamp NULL DEFAULT current_timestamp(),
   `UpdationDate` timestamp NULL DEFAULT NULL ON UPDATE current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `tbltourpackages`
@@ -189,13 +189,13 @@ INSERT INTO `tbltourpackages` (`PackageId`, `PackageName`, `PackageType`, `Packa
 
 CREATE TABLE `tblusers` (
   `id` int(11) NOT NULL,
-  `FullName` varchar(100) DEFAULT NULL,
+  `FullName` nvarchar(100) DEFAULT NULL,
   `MobileNumber` char(10) DEFAULT NULL,
-  `EmailId` varchar(70) DEFAULT NULL,
-  `Password` varchar(100) DEFAULT NULL,
+  `EmailId` nvarchar(70) DEFAULT NULL,
+  `Password` nvarchar(100) DEFAULT NULL,
   `RegDate` timestamp NULL DEFAULT current_timestamp(),
   `UpdationDate` timestamp NULL DEFAULT NULL ON UPDATE current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `tblusers`

@@ -64,17 +64,21 @@ label {
 /*-- top-header --*/
 
 .logo a {
-    color: #3F84B1;
     letter-spacing: 1px;
-    font-size: 2em;
-    font-weight: 400;
+    font-size: 2.5em;
+    font-weight: bold;
     display: block;
     text-decoration: none;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Prompt', sans-serif;
 }
 
 .logo span {
-    color: #34ad00;
+    color: #fff;
+}
+
+.logo em {
+    color: #34ad00 !important;
+    font-size: 50px;
 }
 
 i.fa.fa-home {
@@ -82,7 +86,7 @@ i.fa.fa-home {
 }
 
 .top-header {
-    background-color: #3F84B1;
+    background-color: #fff;
     border-bottom: 0 none;
     height: 36px;
     line-height: 35px;
@@ -104,7 +108,7 @@ li.prnt {
 ul.tp-hd-lft a {
     font-size: 13px;
     font-weight: 600;
-    color: #fff;
+    color: #000;
 }
 
 ul.tp-hd-rgt {
@@ -115,13 +119,13 @@ ul.tp-hd-rgt li {
     display: inline-block;
     font-size: 13px;
     font-weight: 600;
-    color: #fff;
+    color: #000;
 }
 
 ul.tp-hd-rgt a {
     font-size: 13px;
     font-weight: 600;
-    color: #fff;
+    color: #000;
 }
 
 li.ned,
@@ -148,7 +152,7 @@ li.tol {
 
 .logo {
     float: left;
-    margin-right: 60px;
+    padding-right: 20px;
 }
 
 .bus {
@@ -200,14 +204,15 @@ i.fa.fa-lock {
     -o-background-size: cover;
     -ms-background-size: cover;
     -moz-background-size: cover;
-    min-height: 430px;
-    background-position-y: 50%;
+    min-height: 600px;
+    background-position-y: 35%;
+    opacity: 0.9;
 }
 
 .banner h1 {
-    font-size: 50px;
+    font-size: 60px;
     margin-bottom: 40px;
-    padding: 4em 0 0;
+    padding: 3.5em 0 0;
     text-align: center;
     color: #ffffff;
 }
@@ -378,7 +383,7 @@ i.fa.fa-mobile {
     font-size: 15px;
     line-height: 1.6em;
     font-weight: 300;
-    color: #999;
+    color: #000;
 }
 
 
@@ -425,7 +430,7 @@ a.learn:hover {
     line-height: 1.8em;
     width: 55%;
     margin: 1.5em 0;
-    color: #999;
+    color: #000;
 }
 
 .track-right {
@@ -480,7 +485,7 @@ i.fa.fa-ticket {
 
 .routes p {
     font-size: 1.2em;
-    color: #999;
+    color: #000;
     line-height: 1.8em;
 }
 
@@ -504,7 +509,7 @@ i.fa.fa-ticket {
     font-size: 1.2em;
     line-height: 1.8em;
     margin: 1em 0;
-    color: #999;
+    color: #000;
 }
 
 
@@ -546,14 +551,13 @@ i.fa.fa-ticket {
     display: inline-block;
     margin: 0 10px;
     font-size: 14px;
-    color: #fff;
+    color: #000;
 }
 
 .footer-btm li a {
     font-size: 15px;
     color: #fff;
     display: inline-block;
-    padding: 5px 8px;
 }
 
 .footer-btm li a:hover {
@@ -561,8 +565,6 @@ i.fa.fa-ticket {
 }
 
 .footer-btm {
-    background: #4CB320;
-    padding: 0.5em 0;
     text-align: center;
 }
 
@@ -593,13 +595,14 @@ i.fa.fa-ticket {
 /*-- bus --*/
 
 .banner-1 {
-    background: url(../images/3.jpg)no-repeat;
+    background: url(../images/15.jpg)no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
     -ms-background-size: cover;
     -moz-background-size: cover;
-    min-height: 200px;
+    min-height: 300px;
+    background-position-y: 35%;
 }
 
 .banner-1 h1 {
@@ -654,7 +657,7 @@ li.fare {
 }
 
 .bus-btm li a {
-    color: #999;
+    color: #000;
     font-size: 15px;
     display: inline-block;
 }
@@ -788,7 +791,7 @@ ul.first {
     font-size: 1em;
     line-height: 1.8em;
     margin: 0 0 1em;
-    color: #999;
+    color: #000;
     font-weight: 400;
 }
 
@@ -814,7 +817,7 @@ ul.first {
 
 .ab-rt ul li a {
     font-size: 1em;
-    color: #999;
+    color: #000;
     background: url(../images/dot.png)no-repeat 0px 2px;
     padding: 0px 0px 0px 30px;
 }
@@ -850,7 +853,7 @@ ul.first {
 
 .travel p {
     font-size: 15px;
-    color: #999;
+    color: #000;
     line-height: 1.8em;
     margin: 1em 0;
 }
@@ -994,7 +997,7 @@ i.fa.fa-gift {
 /*-- hotels --*/
 
 .banner-2 {
-    background: url(../images/6.jpg)no-repeat;
+    background: url(../images/11.jpg)no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
@@ -1004,13 +1007,14 @@ i.fa.fa-gift {
 }
 
 .banner-3 {
-    background: url(../images/6.jpg)no-repeat;
+    background: url(../images/8.jpg)no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
     -ms-background-size: cover;
     -moz-background-size: cover;
-    min-height: 200px;
+    min-height: 300px;
+    background-position-y: 45%;
 }
 
 .banner-2 h1 {
@@ -1194,7 +1198,7 @@ i.fa.fa-gift {
     font-size: 15px;
     line-height: 1.6em;
     font-weight: 300;
-    color: #999;
+    color: #000;
     margin: 1em 0;
 }
 
@@ -1321,7 +1325,7 @@ select {
 .agent p {
     font-size: 15px;
     margin: 1em 0;
-    color: #999;
+    color: #000;
     line-height: 1.6em;
 }
 
@@ -1353,7 +1357,7 @@ select {
     display: block;
     line-height: 1.7em;
     font-size: 13px;
-    color: #999;
+    color: #000;
 }
 
 .con-top {
@@ -1371,7 +1375,7 @@ select {
     float: left;
     margin: 0 12px 0 0px;
     font-size: 15px;
-    color: #999;
+    color: #000;
 }
 
 span.glyphicon.glyphicon-eye-open,
@@ -1383,7 +1387,7 @@ span.glyphicon.glyphicon-thumbs-up {
 
 .details-middle p {
     font-size: 15px;
-    color: #999;
+    color: #000;
     line-height: 1.7em;
     margin: 0.5em 0;
 }
@@ -1498,7 +1502,7 @@ span.glyphicon.glyphicon-thumbs-up {
 
 .rom-btm p {
     font-size: 15px;
-    color: #999;
+    color: #000;
 }
 
 .rom-btm h6 {
@@ -1519,7 +1523,7 @@ span.glyphicon.glyphicon-thumbs-up {
 .rom-btm h5 {
     font-size: 1.2em;
     font-weight: 700;
-    color: #999;
+    color: #000;
 }
 
 
@@ -1591,7 +1595,7 @@ h4.sing {
 .hotel-police p {
     font-size: 15px;
     line-height: 1.8em;
-    color: #999;
+    color: #000;
 }
 
 .hotel-police {
@@ -1603,7 +1607,7 @@ h4.sing {
     float: left;
     width: 33.33%;
     line-height: 1.8em;
-    color: #999;
+    color: #000;
 }
 
 .hotel-amenit {
@@ -1621,7 +1625,7 @@ ul.off-mo li {
     display: block;
     line-height: 1.8em;
     font-size: 14px;
-    color: #999;
+    color: #000;
     margin-bottom: 1em;
 }
 
@@ -1656,7 +1660,7 @@ ul.off-mo span {
 
 .selectroom_right h2 {
     font-size: 1.7em;
-    color: #999;
+    color: #000;
     font-weight: 600;
     margin: 0;
 }
@@ -1669,7 +1673,7 @@ ul.off-mo span {
 
 p.dow {
     font-size: 15px;
-    color: #999;
+    color: #000;
     font-weight: 300;
     line-height: 1.8em;
     margin-bottom: 1em;
@@ -1679,7 +1683,7 @@ p.dow {
     font-size: 15px;
     line-height: 1.6em;
     font-weight: 300;
-    color: #999;
+    color: #000;
 }
 
 .selectroom_right ul {
@@ -1688,7 +1692,7 @@ p.dow {
 
 .selectroom_right h6 {
     font-size: 1em;
-    color: #999;
+    color: #000;
     line-height: 1.8em;
 }
 
@@ -1857,7 +1861,7 @@ button.subbtn:hover {
 
 .tracking p {
     font-size: 1em;
-    color: #999;
+    color: #000;
     line-height: 1.8em;
     font-weight: 300;
 }
@@ -2030,7 +2034,7 @@ button.subbtn:hover {
 .privacy p {
     font-size: 1em;
     line-height: 1.8em;
-    color: #999;
+    color: #000;
     margin: 1em 0;
 }
 
@@ -2066,13 +2070,13 @@ button.subbtn:hover {
 .faq p {
     font-size: 1em;
     line-height: 1.8em;
-    color: #999;
+    color: #000;
     margin: 1em 0;
 }
 
 .faq li {
     display: block;
-    color: #999;
+    color: #000;
     font-size: 1em;
     margin: 1em 0;
 }
@@ -2104,7 +2108,7 @@ button.subbtn:hover {
 
 .app-right p {
     margin: 15px 0 30px 0;
-    color: #999;
+    color: #000;
     font-size: 1em;
     line-height: 25px;
 }
@@ -2140,7 +2144,7 @@ button.subbtn:hover {
 }
 
 .banner-text p {
-    color: #999;
+    color: #000;
     font-size: 1em;
     margin: 2em auto 0 auto;
     width: 72%;
@@ -2163,7 +2167,7 @@ button.subbtn:hover {
 }
 
 .banner-bottom-grid p {
-    color: #999;
+    color: #000;
     font-size: 1em;
     margin: 0 auto;
     width: 80%;
@@ -2253,11 +2257,11 @@ ul.callbacks_tabs.callbacks2_tabs {
 .comments-list ul li {
     display: inline-block;
     font-size: 14px;
-    color: #999;
+    color: #000;
 }
 
 .comments-list ul li a {
-    color: #999;
+    color: #000;
     text-decoration: none;
 }
 
@@ -2286,7 +2290,7 @@ a.bake:hover {
 
 .comments-list p {
     margin: 2em 0;
-    color: #999;
+    color: #000;
     line-height: 1.8em;
     font-size: 14px;
 }
@@ -2294,8 +2298,8 @@ a.bake:hover {
 .comments-list:nth-child(2) {
     margin: 5em 0;
     padding: 3em 0 5em;
-    border-top: 1px solid #999;
-    border-bottom: 1px solid #999;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
 }
 
 ul.paging {
@@ -2344,7 +2348,7 @@ ul.paging {
 
 .popular-right p {
     font-size: 14px;
-    color: #999;
+    color: #000;
     margin: .5em 0 0;
     line-height: 1.8em;
 }
@@ -2366,7 +2370,7 @@ ul.paging {
 
 .subscribe p {
     font-size: 14px;
-    color: #999;
+    color: #000;
     margin: 0 0 1em;
     line-height: 1.8em;
     text-align: center;
@@ -2377,7 +2381,7 @@ ul.paging {
     border: 1px solid #D1D1D1;
     background: #E1E1E1;
     font-size: 14px;
-    color: #999;
+    color: #000;
     padding: 10px;
     width: 100%;
     margin-bottom: .5em;
@@ -2405,7 +2409,7 @@ ul.paging {
 }
 
 .categories ul li a {
-    color: #999;
+    color: #000;
     font-size: 14px;
     text-decoration: none;
     text-transform: capitalize;
@@ -2481,7 +2485,7 @@ ul.paging {
 
 .admin-right p {
     font-size: 14px;
-    color: #999;
+    color: #000;
     margin: 0;
     line-height: 1.8em;
 }
@@ -2494,7 +2498,7 @@ ul.paging {
 }
 
 .admin-right p a:hover {
-    color: #999;
+    color: #000;
 }
 
 .recent-comments-grids {
@@ -2515,7 +2519,7 @@ ul.paging {
 
 .recent-comments-grid-right p {
     margin: 1em 0 0;
-    color: #999;
+    color: #000;
     line-height: 1.8em;
     font-size: 14px;
 }
@@ -2561,7 +2565,7 @@ ul.paging {
     background: #f5f5f5;
     border: 1px solid #D1D1D1;
     font-size: 14px;
-    color: #999;
+    color: #000;
 }
 
 .leave-comment input[type="email"] {
@@ -2803,7 +2807,6 @@ ul.set-1 {
 }
 
 .navbar-default {
-    background-color: #4CB320 !important;
     border-color: #4CB320 !important;
 }
 
@@ -2819,6 +2822,7 @@ ul.nav.navbar-nav li a {
     color: #fff;
     display: inline-block;
     padding: 5px 8px;
+    font-weight: bold;
 }
 
 .navbar-default .navbar-nav>li>a:hover,
@@ -2829,13 +2833,15 @@ ul.nav.navbar-nav li a {
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
-    color: #4CFF00 !important;
+    color: #000 !important;
     background-color: #4CB320 !important;
 }
 
 .navbar-collapse {
-    padding-right: 0px !important;
-    padding-left: 0px !important;
+    padding-left: 30%;
+    line-height: 80px;
+    background-color: #a3a3a3;
+    background-color: rgba(0, 0, 0, 0.2) !important;
 }
 
 
@@ -3356,7 +3362,7 @@ ul.nav.navbar-nav li a {
         border-color: #4CB320;
     }
     ul.nav.navbar-nav li a {
-        font-size: 15px;
+        font-size: 20px;
         padding: 5px 0px;
         display: block;
     }
@@ -3949,7 +3955,7 @@ ul.nav.navbar-nav li a {
     }
     .rom-btm p {
         font-size: 14px;
-        color: #999;
+        color: #000;
     }
     .tracking-left {
         float: left;
@@ -4549,7 +4555,7 @@ ul.nav.navbar-nav li a {
     .top-header {
         height: 62px;
         line-height: 23px;
-        padding: 0.5em 0;
+        padding: 0.1em 0;
     }
     .bus a {
         font-size: 12px;

@@ -16,6 +16,7 @@ include('includes/config.php');
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css2?family=Prompt' rel='stylesheet' type="text/css">
 <link href="css/font-awesome.css" rel="stylesheet">
 <!-- Custom Theme files -->
 <script src="js/jquery-1.12.0.min.js"></script>
@@ -31,8 +32,40 @@ include('includes/config.php');
 <body>
 <?php include('includes/header.php');?>
 <div class="banner">
+
+
+<div class="logo wow fadeInDown animated" data-wow-delay=".2s" >
+			<a href="index.php" style="margin-left: 40%"> <em>T</em><span class="logo1">ravelnam</span></a>	
+		</div>
+<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+	
+		
+				
+					<nav class="cl-effect-1">
+						<ul class="nav navbar-nav">
+							
+			
+	
+							<li><a href="index.php">Trang chủ</a></li>
+							<li><a href="page.php?type=aboutus">Về chúng tôi</a></li>
+								<li><a href="package-list.php">Các Gói Du Lịch</a></li>
+								<li><a href="page.php?type=privacy">Chính sách bảo mật</a></li>
+								<li><a href="page.php?type=terms">Điều khoản</a></li>
+								<li><a href="page.php?type=contact">Liên hệ</a></li>
+								<?php if($_SESSION['login'])
+{?>
+								<li>Bạn cần hỗ trợ?<a href="#" data-toggle="modal" data-target="#myModal3"> / Hãy cho chúng tôi biết </a>  </li>
+								<?php } else { ?>
+								<li><a href="enquiry.php">Xem xét </a>  </li>
+								<?php } ?>
+								<div class="clearfix"></div>
+
+						</ul>
+					</nav>
+				</div><!-- /.navbar-collapse -->	
 	<div class="container">
-		<h1 class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;"> N7 - Travelnam</h1>
+		
+		<h1 class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;"> Cùng nhau trải nghiệm cuộc sống </h1>
 	</div>
 </div>
 
@@ -77,7 +110,6 @@ include('includes/config.php');
 	</div>
 </div>
 <!--- /rupes ---->
-
 
 
 

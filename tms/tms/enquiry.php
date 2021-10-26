@@ -20,11 +20,11 @@ $query->execute();
 $lastInsertId = $dbh->lastInsertId();
 if($lastInsertId)
 {
-$msg="Enquiry  Successfully submited";
+$msg="Yêu cầu được gửi thành công";
 }
 else 
 {
-$error="Something went wrong. Please try again";
+$error="Đã xảy ra lỗi. Vui lòng thử lại";
 }
 
 }

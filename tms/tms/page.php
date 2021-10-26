@@ -79,8 +79,36 @@ $error="Something went wrong. Please try again";
 <div class="top-header">
 <?php include('includes/header.php');?>
 <div class="banner-1 ">
+	
+
+<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+	
+		
+				
+					<nav class="cl-effect-1">
+						<ul class="nav navbar-nav">
+							
+			
+	
+							<li><a href="index.php">Trang chủ</a></li>
+							<li><a href="page.php?type=aboutus">Về chúng tôi</a></li>
+								<li><a href="package-list.php">Các Gói Du Lịch</a></li>
+								<li><a href="page.php?type=privacy">Chính sách bảo mật</a></li>
+								<li><a href="page.php?type=terms">Điều khoản</a></li>
+								<li><a href="page.php?type=contact">Liên hệ</a></li>
+								<?php if($_SESSION['login'])
+{?>
+								<li>Bạn cần hỗ trợ?<a href="#" data-toggle="modal" data-target="#myModal3"> / Hãy cho chúng tôi biết </a>  </li>
+								<?php } else { ?>
+								<li><a href="enquiry.php">Xem xét </a>  </li>
+								<?php } ?>
+								<div class="clearfix"></div>
+
+						</ul>
+					</nav>
+				</div><!-- /.navbar-collapse -->	
 	<div class="container">
-		<h1 class="wow zoomIn animated animated logo" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;">Travelnam</h1>
+		<h1 class="wow zoomIn animated animated logo" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;">N7 - Travelnam</h1>
 		
 	</div>
 </div>

@@ -59,7 +59,7 @@ include('includes/config.php');
 					</nav>
 				</div><!-- /.navbar-collapse -->	
 	<div class="container">
-		<h1 class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;">Travelnam  | Danh Sách Các Gói Du Lịch</h1>
+		<h1 class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;">Travelnam</h1>
 	</div>
 </div>
 <!--- /banner ---->

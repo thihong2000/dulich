@@ -35,13 +35,13 @@ echo "<script type='text/javascript'> document.location = 'thankyou.php'; </scri
 							<form name="help" method="post">
 								<div class="modal-body modal-spa">
 									<div class="writ">
-										<h4>CẦN SỰ TRỢ GIÚP?</h4>
+										<h4>Bạn cần hỗ trợ?</h4>
 											<ul>
 												
 												<li class="na-me">
 													<select id="country" name="issue" class="frm-field required sect" required="">
 														<option value="">Chọn vấn đề</option> 		
-														<option value="Booking Issues">Vấn đề đặt trước</option>
+														<option value="Booking Issues">Vé đã phát hành</option>
 														<option value="Cancellation">Huỷ bỏ</option>
 														<option value="Refund">Hoàn tiền</option>
 														<option value="Other">Khác</option>														

@@ -140,15 +140,15 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 			switch($_GET['type'])
 			{
 				case "terms" :
-									echo "Terms and Conditions";
+									echo "Các điều khoản và điều kiện";
 									break;
 				
 				case "privacy" :
-									echo "Privacy And Policy";
+									echo "Quyền riêng tư và chính sách";
 									break;
 				
 				case "aboutus" :
-									echo "About US";
+									echo "Về chúng tôi";
 									break;
 				case "software" :
 									echo "Offers";
@@ -169,7 +169,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 									echo "Super Brand";
 									break;
 				case "contact" :
-									echo "Contact Us";
+									echo "Liên hệ chúng tôi";
 									break;
 				
 				

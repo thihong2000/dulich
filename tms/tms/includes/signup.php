@@ -16,12 +16,12 @@ $query->execute();
 $lastInsertId = $dbh->lastInsertId();
 if($lastInsertId)
 {
-$_SESSION['msg']="You are Scuccessfully registered. Now you can login ";
+$_SESSION['msg']="Đăng ký thành công. Bây giờ bạn có thể đăng nhập";
 header('location:thankyou.php');
 }
 else 
 {
-$_SESSION['msg']="Something went wrong. Please try again.";
+$_SESSION['msg']="Lỗi rồi. Thử lại nhé.";
 header('location:thankyou.php');
 }
 }

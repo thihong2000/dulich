@@ -2838,7 +2838,7 @@ ul.nav.navbar-nav li a {
 }
 
 .navbar-collapse {
-    padding-left: 30%;
+    padding-left: 20%;
     line-height: 80px;
     background-color: #a3a3a3;
     background-color: rgba(0, 0, 0, 0.2) !important;

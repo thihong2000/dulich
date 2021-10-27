@@ -22,11 +22,11 @@ $query->execute();
 $lastInsertId = $dbh->lastInsertId();
 if($lastInsertId)
 {
-$msg="Booked Successfully";
+$msg="Đặt Thành công";
 }
 else 
 {
-$error="Something went wrong. Please try again";
+$error="Có một vài thứ bị lỗi, Vui lòng thử lại";
 }
 
 }

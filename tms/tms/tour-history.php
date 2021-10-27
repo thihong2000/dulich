@@ -43,11 +43,11 @@ $query-> bindParam(':email',$email, PDO::PARAM_STR);
 $query-> bindParam(':bid',$bid, PDO::PARAM_STR);
 $query -> execute();
 
-$msg="Booking Cancelled successfully";
+$msg="Đã hủy đặt chỗ thành công";
 }
 else
 {
-$error="You can't cancel booking before 24 hours";
+$error="Bạn không thể hủy đặt chỗ trước khi đủ 24 giờ";
 }
 }
 }
@@ -149,19 +149,19 @@ foreach($results as $result)
 <td><?php echo htmlentities($result->comment);?></td>
 <td><?php if($result->status==0)
 {
-echo "Pending";
+echo "Chưa giải quyết";
 }
 if($result->status==1)
 {
-echo "Confirmed";
+echo "Đã xác nhận";
 }
 if($result->status==2 and  $result->cancelby=='u')
 {
-echo "Canceled by you at " .$result->upddate;
+echo "Đã hủy bởi bạn lúc " .$result->upddate;
 } 
 if($result->status==2 and $result->cancelby=='a')
 {
-echo "Canceled by admin at " .$result->upddate;
+echo "Đã hủy bởi admin lúc" .$result->upddate;
 
 }
 ?></td>
@@ -170,7 +170,7 @@ echo "Canceled by admin at " .$result->upddate;
 {
 	?><td>Đã hủy </td>
 <?php } else {?>
-<td><a href="tour-history.php?bkid=<?php echo htmlentities($result->bookid);?>" onclick="return confirm('Do you really want to cancel booking')" >Hủy bỏ</a></td>
+<td><a href="tour-history.php?bkid=<?php echo htmlentities($result->bookid);?>" onclick="return confirm('Bạn có thực sự muốn hủy đặt chỗ không')" >Hủy bỏ</a></td>
 <?php }?>
 </tr>
 <?php $cnt=$cnt+1; }} ?>

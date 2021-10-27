@@ -20,7 +20,7 @@ $query -> bindParam(':cancelby',$cancelby , PDO::PARAM_STR);
 $query-> bindParam(':bid',$bid, PDO::PARAM_STR);
 $query -> execute();
 
-$msg="Booking Cancelled successfully";
+$msg="Hủy đặt chỗ thành công";
 }
 
 
@@ -34,7 +34,7 @@ $query = $dbh->prepare($sql);
 $query -> bindParam(':status',$status, PDO::PARAM_STR);
 $query-> bindParam(':bcid',$bcid, PDO::PARAM_STR);
 $query -> execute();
-$msg="Booking Confirm successfully";
+$msg="Xác nhận đặt chỗ thành công";
 }
 
 
@@ -159,19 +159,19 @@ foreach($results as $result)
 								<td><?php echo htmlentities($result->comment);?></td>
 								<td><?php if($result->status==0)
 {
-echo "Pending";
+echo "Chưa giải quyết";
 }
 if($result->status==1)
 {
-echo "Confirmed";
+echo "Đã xác nhận";
 }
 if($result->status==2 and  $result->cancelby=='a')
 {
-echo "Canceled by you at " .$result->upddate;
+echo "Được hủy bởi bạn vào " .$result->upddate;
 } 
 if($result->status==2 and $result->cancelby=='u')
 {
-echo "Canceled by User at " .$result->upddate;
+echo "Được hủy bởi người dùng vào" .$result->upddate;
 
 }
 ?></td>
@@ -180,7 +180,7 @@ echo "Canceled by User at " .$result->upddate;
 {
 	?><td>Đã hủy</td>
 <?php } else {?>
-<td><a href="manage-bookings.php?bkid=<?php echo htmlentities($result->bookid);?>" onclick="return confirm('Do you really want to cancel booking')" >Hủy bỏ</a> / <a href="manage-bookings.php?bckid=<?php echo htmlentities($result->bookid);?>" onclick="return confirm('booking has been confirm')" >Xác nhận</a></td>
+<td><a href="manage-bookings.php?bkid=<?php echo htmlentities($result->bookid);?>" onclick="return confirm('Bạn muốn hủy đặt?')" >Hủy bỏ</a> / <a href="manage-bookings.php?bckid=<?php echo htmlentities($result->bookid);?>" onclick="return confirm('đặt chỗ đã được xác nhận')" >Xác nhận</a></td>
 <?php }?>
 
 						  </tr>

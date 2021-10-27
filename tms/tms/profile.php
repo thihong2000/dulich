@@ -19,7 +19,7 @@ $query->bindParam(':name',$name,PDO::PARAM_STR);
 $query->bindParam(':mobileno',$mobileno,PDO::PARAM_STR);
 $query->bindParam(':email',$email,PDO::PARAM_STR);
 $query->execute();
-$msg="Profile Updated Successfully";
+$msg="Cập nhật thành công";
 }
 
 ?>

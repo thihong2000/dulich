@@ -18,7 +18,7 @@ $query -> bindParam(':remark',$remark, PDO::PARAM_STR);
 $query-> bindParam(':iid',$iid, PDO::PARAM_STR);
 $query -> execute();
 
-$msg="Remark  successfully Updated";
+$msg="Đã cập nhật thành công nhận xét";
 }
 
 

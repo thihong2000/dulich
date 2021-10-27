@@ -26,10 +26,10 @@ $chngpwd1 = $dbh->prepare($con);
 $chngpwd1-> bindParam(':username', $username, PDO::PARAM_STR);
 $chngpwd1-> bindParam(':newpassword', $newpassword, PDO::PARAM_STR);
 $chngpwd1->execute();
-$msg="Your Password succesfully changed";
+$msg="Mật khẩu của bạn đã được thay đổi";
 }
 else {
-$error="Your current password is wrong";	
+$error="Mật khẩu hiện tại của bạn không đúng";	
 }
 }
 ?>
@@ -54,7 +54,7 @@ function valid()
 {
 if(document.chngpwd.newpassword.value!= document.chngpwd.confirmpassword.value)
 {
-alert("New Password and Confirm Password Field do not match  !!");
+alert("Mật khẩu mới và mật khẩu xác nhận không khớp  !!");
 document.chngpwd.confirmpassword.focus();
 return false;
 }

@@ -16,7 +16,7 @@ $query = $dbh->prepare($sql);
 $query -> bindParam(':pagetype',$pagetype, PDO::PARAM_STR);
 $query-> bindParam(':pagedetails',$pagedetails, PDO::PARAM_STR);
 $query -> execute();
-$msg="Page data updated  successfully";
+$msg="Trang đã được cập nhật";
 
 }
 
@@ -151,22 +151,22 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 									echo "Về chúng tôi";
 									break;
 				case "software" :
-									echo "Offers";
+									echo "Ưu đãi";
 									break;	
 				case "aspnet" :
-									echo "Vission And MISSION";
+									echo "Tầm nhìn và SỨ MỆNH";
 									break;		
 				case "objectives" :
-									echo "Objectives";
+									echo "Mục tiêu";
 									break;						
 				case "disclaimer" :
-									echo "Disclaimer";
+									echo "Tuyên bố từ chối trách nhiệm";
 									break;
 				case "vbnet" :
-									echo "Partner With Us";
+									echo "Hợp tác với chúng tôi";
 									break;
 				case "candc" :
-									echo "Super Brand";
+									echo "Siêu thương hiệu";
 									break;
 				case "contact" :
 									echo "Liên hệ chúng tôi";

@@ -19,7 +19,7 @@ $query -> bindParam(':status',$status, PDO::PARAM_STR);
 $query-> bindParam(':eid',$eid, PDO::PARAM_STR);
 $query -> execute();
 
-$msg="Enquiry  successfully read";
+$msg="Yêu cầu đã đọc thành công";
 }
 
 
@@ -151,7 +151,7 @@ foreach($results as $result)
 	?><td>Đọc</td>
 <?php } else {?>
 
-<td><a href="manage-enquires.php?eid=<?php echo htmlentities($result->id);?>" onclick="return confirm('Do you really want to read')" >Chưa giải quyết</a>
+<td><a href="manage-enquires.php?eid=<?php echo htmlentities($result->id);?>" onclick="return confirm('Bạn muốn đọc?')" >Chưa giải quyết</a>
 </td>
 <?php } ?>
 </tr>

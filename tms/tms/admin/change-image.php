@@ -19,7 +19,7 @@ $query = $dbh->prepare($sql);
 $query->bindParam(':imgid',$imgid,PDO::PARAM_STR);
 $query->bindParam(':pimage',$pimage,PDO::PARAM_STR);
 $query->execute();
-$msg="Package Created Successfully";
+$msg="Gói được tạo thành công";
 
 
 

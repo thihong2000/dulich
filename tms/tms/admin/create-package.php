@@ -30,11 +30,11 @@ $query->execute();
 $lastInsertId = $dbh->lastInsertId();
 if($lastInsertId)
 {
-$msg="Package Created Successfully";
+$msg="Gói đã được tạo";
 }
 else 
 {
-$error="Something went wrong. Please try again";
+$error="Đã xảy ra lỗi. Vui lòng thử lại";
 }
 
 }

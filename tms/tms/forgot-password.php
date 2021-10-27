@@ -21,10 +21,10 @@ $chngpwd1-> bindParam(':email', $email, PDO::PARAM_STR);
 $chngpwd1-> bindParam(':mobile', $mobile, PDO::PARAM_STR);
 $chngpwd1-> bindParam(':newpassword', $newpassword, PDO::PARAM_STR);
 $chngpwd1->execute();
-$msg="Your Password succesfully changed";
+$msg="Mật khẩu của bạn đã được thay đổi";
 }
 else {
-$error="Email id or Mobile no is invalid";	
+$error="Id email hoặc Số điện thoại không hợp lệ";	
 }
 }
 
@@ -57,7 +57,7 @@ function valid()
 {
 if(document.chngpwd.newpassword.value!= document.chngpwd.confirmpassword.value)
 {
-alert("New Password and Confirm Password Field do not match  !!");
+alert("Mật khẩu mới và mật khẩu xác nhận không khớp!!");
 document.chngpwd.confirmpassword.focus();
 return false;
 }

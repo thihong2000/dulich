@@ -110,7 +110,7 @@ $error="Có một vài thứ bị lỗi, Vui lòng thử lại";
 					</nav>
 				</div><!-- /.navbar-collapse -->	
 	<div class="container">
-		<h1 class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;">Chi tiết</h1>
+		<h1 class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;">Chi tiết gói</h1>
 	</div>
 </div>
 <!--- /banner ---->

@@ -16,7 +16,7 @@ $_SESSION['login']=$_POST['email'];
 echo "<script type='text/javascript'> document.location = 'package-list.php'; </script>";
 } else{
 	
-	echo "<script>alert('Invalid Details');</script>";
+	echo "<script>alert('Chi tiết không hợp lệ');</script>";
 
 }
 

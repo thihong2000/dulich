@@ -89,11 +89,11 @@ $error="Đã xảy ra lỗi. Vui lòng thử lại";
 			
 	
 							<li><a href="index.php">Trang chủ</a></li>
-							<li><a href="page.php?type=aboutus">Về chúng tôi</a></li>
+							<li><a href="page.php?type=Giới thiệu">Về chúng tôi</a></li>
 								<li><a href="package-list.php">Các Gói Du Lịch</a></li>
-								<li><a href="page.php?type=privacy">Chính sách bảo mật</a></li>
-								<li><a href="page.php?type=terms">Điều khoản</a></li>
-								<li><a href="page.php?type=contact">Liên hệ</a></li>
+								<li><a href="page.php?type=Chính sách bảo mật">Chính sách bảo mật</a></li>
+								<li><a href="page.php?type=Điều kiện và điều khoản">Điều kiện và điều khoản</a></li>
+								<li><a href="page.php?type=Liên hệ">Liên hệ</a></li>
 								<?php if($_SESSION['login'])
 {?>
 								<li>Bạn cần hỗ trợ?<a href="#" data-toggle="modal" data-target="#myModal3"> / Hãy cho chúng tôi biết </a>  </li>

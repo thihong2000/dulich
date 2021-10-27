@@ -14,12 +14,12 @@ $query->execute();
 $lastInsertId = $dbh->lastInsertId();
 if($lastInsertId)
 {
-$_SESSION['msg']="Info successfully submited ";
+$_SESSION['msg']="Thông tin được gửi thành công";
 echo "<script type='text/javascript'> document.location = 'thankyou.php'; </script>";
 }
 else 
 {
-$_SESSION['msg']="Something went wrong. Please try again.";
+$_SESSION['msg']="Lỗi. Vui lòng thử lại";
 echo "<script type='text/javascript'> document.location = 'thankyou.php'; </script>";
 }
 }

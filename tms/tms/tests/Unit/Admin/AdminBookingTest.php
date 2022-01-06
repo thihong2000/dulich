@@ -12,7 +12,7 @@ class AdminBookingTest extends \PHPUnit\Framework\TestCase
     public function testValueArrayAdminBooking(){
 		// //test value array bookings
 		$sql = "SELECT BookingId from tblbooking";
-		$response = arrayValueDB($sql);
+		$response = arrayzzValueDB($sql);
 		$this->assertTrue(isset($response));
     }
 }
